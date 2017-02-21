@@ -1,0 +1,42 @@
+<div class="" id="widget-a79be2879e1834722d429303f35a89b1">
+    <div class="container">
+                <ul class="owl-carousel ">
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb1.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb1.png" alt="Brand01" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb1.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb2.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb2.png" alt="Brand02" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb2.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb3.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb3.png" alt="Brand03" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb3.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb4.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb4.png" alt="Brand04" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb4.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb5.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb5.png" alt="Brand05" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb5.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb6.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb6.png" alt="Brand06" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb6.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb7.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb7.png" alt="Brand07" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb7.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb8.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb8.png" alt="Brand08" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb8.png" />
+                                                                                            </li>
+                            <li>
+                                                                                                        <img class="lazyOwl img-responsive" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb9.png" data-srcX2="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb9.png" alt="Brand09" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/brands/brand_thumb9.png" />
+                                                                                            </li>
+                    </ul>
+    </div>
+    <script type="text/javascript" src="http://127.0.0.1/imaginensync/js/mt/widget/frontend.js"></script>
+    <script type="text/javascript">
+        new MT.Widget('widget-a79be2879e1834722d429303f35a89b1', {
+            animation: {"enable":false,"animationName":null,"animationDelay":300,"itemSelector":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/wow\/wow.js"},
+            parallax: {"enable":false,"type":null,"overlay":null,"video":{"src":null,"volume":false,"layout":null,"width":null,"height":null},"image":{"src":null,"fit":null,"repeat":null},"file":{"poster":null,"mp4":null,"webm":null,"volume":false}},
+            carousel: {"enable":true,"pagination":false,"autoPlay":15000,"items":6,"singleItem":false,"autoHeight":true,"loop":true,"lazyLoad":true,"lazyEffect":false,"addClassActive":true,"navigation":false,"navigationText":[null,null]},
+            carouselConfig: null,
+            kenburns: {"enable":false,"images":[],"overlay":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/jquery\/plugins\/kenburns.js"}        });
+    </script>
+</div>

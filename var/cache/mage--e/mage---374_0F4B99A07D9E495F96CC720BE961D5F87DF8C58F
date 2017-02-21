@@ -1,0 +1,101 @@
+<div class="blog-widget blog-style01 " id="widget-fe97c35870c282cdc8050d12cfabcdf6">
+            <h3 class="title-widget"><span>From The Blog</span></h3>
+                                <div class="category-products blog-type1 blog-collection">
+        <ul class="products-grid  owl-carousel">
+                    <li class="blog item">
+            <div class="inner-blog-item">
+                
+                <div class="images">
+                                                                        <img alt="blog image" class="lazyOwl" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog04.jpg"
+                                 data-srcx2="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog04.jpg"
+                                 src="http://127.0.0.1/imaginensync/skin/frontend/mtfastion/default/images/loader.gif"/>
+                                                            </div>
+                <div class="main_content">
+                    <div class="midle_content">
+                                                    <span class="date">Jan 11, 2016 </span> |
+                                                                            <span class="user"><!--<label>By </label>--> Sky Magens                                </span>
+                                                                    </div>
+                    <h3><a href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-04/?___SID=U">Summer Fashion Week  2016</a></h3>
+                                                                <div class="button bg-border readmore"><a
+                                href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-04/?___SID=U">Read More</a>
+                        </div>
+                                    </div>
+            </div>
+        </li>
+                                                    <li class="blog item">
+            <div class="inner-blog-item">
+                
+                <div class="images">
+                                                                        <img alt="blog image" class="lazyOwl" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog03.jpg"
+                                 data-srcx2="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog03.jpg"
+                                 src="http://127.0.0.1/imaginensync/skin/frontend/mtfastion/default/images/loader.gif"/>
+                                                            </div>
+                <div class="main_content">
+                    <div class="midle_content">
+                                                    <span class="date">Jan 11, 2016 </span> |
+                                                                            <span class="user"><!--<label>By </label>--> Sky Magens                                </span>
+                                                                    </div>
+                    <h3><a href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-03/?___SID=U">London Fashion Week Winter 2015 Are you ready?</a></h3>
+                                                                <div class="button bg-border readmore"><a
+                                href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-03/?___SID=U">Read More</a>
+                        </div>
+                                    </div>
+            </div>
+        </li>
+                                                    <li class="blog item">
+            <div class="inner-blog-item">
+                
+                <div class="images">
+                                                                        <img alt="blog image" class="lazyOwl" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog02.jpg"
+                                 data-srcx2="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog02.jpg"
+                                 src="http://127.0.0.1/imaginensync/skin/frontend/mtfastion/default/images/loader.gif"/>
+                                                            </div>
+                <div class="main_content">
+                    <div class="midle_content">
+                                                    <span class="date">Jan 11, 2016 </span> |
+                                                                            <span class="user"><!--<label>By </label>--> Sky Magens                                </span>
+                                                                    </div>
+                    <h3><a href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-02/?___SID=U">New arrival from John Lemons</a></h3>
+                                                                <div class="button bg-border readmore"><a
+                                href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-02/?___SID=U">Read More</a>
+                        </div>
+                                    </div>
+            </div>
+        </li>
+                                                    <li class="blog item">
+            <div class="inner-blog-item">
+                
+                <div class="images">
+                                                                        <img alt="blog image" class="lazyOwl" data-src="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog01.jpg"
+                                 data-srcx2="http://127.0.0.1/imaginensync/media/wysiwyg/blog/blog01.jpg"
+                                 src="http://127.0.0.1/imaginensync/skin/frontend/mtfastion/default/images/loader.gif"/>
+                                                            </div>
+                <div class="main_content">
+                    <div class="midle_content">
+                                                    <span class="date">Jan 11, 2016 </span> |
+                                                                            <span class="user"><!--<label>By </label>--> Sky Magens                                </span>
+                                                                    </div>
+                    <h3><a href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-01/?___SID=U">London Fashion Week 2016</a></h3>
+                                                                <div class="button bg-border readmore"><a
+                                href="http://127.0.0.1/imaginensync/index.php/blog/blog-post-01/?___SID=U">Read More</a>
+                        </div>
+                                    </div>
+            </div>
+        </li>
+                </ul>
+        </div>
+                    <script type="text/javascript" src="http://127.0.0.1/imaginensync/js/mt/widget/frontend.js"></script>
+    <script type="text/javascript">
+        new MT.Widget('widget-fe97c35870c282cdc8050d12cfabcdf6', {
+            animation: {"enable":false,"animationName":null,"animationDelay":300,"itemSelector":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/wow\/wow.js"},
+            parallax: {"enable":false,"type":null,"overlay":null,"video":{"src":null,"volume":false,"layout":null,"width":null,"height":null},"image":{"src":null,"fit":null,"repeat":null},"file":{"poster":null,"mp4":null,"webm":null,"volume":false}},
+            carousel: {"enable":true,"pagination":false,"autoPlay":false,"items":2,"singleItem":false,"autoHeight":true,"loop":true,"lazyLoad":true,"lazyEffect":false,"addClassActive":true,"navigation":false,"navigationText":[null,null]},
+            carouselConfig: {
+                itemsDesktop : [1170,2],
+                itemsDesktopSmall : [991,2],
+                itemsTablet: [767,2],
+                itemsMobile : [450,1]
+            },
+            kenburns: {"enable":false,"images":[],"overlay":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/jquery\/plugins\/kenburns.js"}        });
+    </script>
+</div>

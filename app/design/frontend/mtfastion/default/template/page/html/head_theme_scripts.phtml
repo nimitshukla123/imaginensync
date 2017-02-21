@@ -1,0 +1,40 @@
+<?php 
+$isResponsive = Mage::helper('mtfastion')->getThemeLayoutCfg('responsive/responsive');
+?>
+<script type="text/javascript" src="<?php echo Mage::getBaseUrl('js') ?>mt/widget/frontend.js"></script>
+<script type="text/javascript">
+    var magenThemes = {};
+    magenThemes.responsive = <?php echo ($isResponsive ? 'true' : 'false'); ?>;
+    <?php if($isResponsive):?>
+    magenThemes.maxBreak = 1170;
+    <?php else:?>
+    magenThemes.maxBreak = 970;
+    <?php endif;?>
+	magenThemes.url = '<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>';
+</script>
+<script type="text/javascript">
+$mt(document).ready(function(){
+  
+ $mt('.static-item').hover(function(){
+        $mt(this).find('.transition-1').toggleClass('hover-transition-1');
+   });
+
+});
+
+$mt(document).ready(function(){
+    var window_height = parseInt($mt(window).height());
+    var window_heihgt_small = window_height - parseInt(40);
+    var window_height_mini = window_height - parseInt(20);
+    $mt('.grid-shop .height_adjusted .item.no-bg').each(function(){
+        $mt(this).height(window_heihgt_small);
+    });
+    $mt('.grid-shop .height_adjusted .item.img-bg').each(function(){
+        $mt(this).height(window_height);
+    });
+    $mt('.grid-shop .height_adjusted.first .item.no-bg,.grid-shop .height_adjusted.last .item.no-bg').each(function(){
+        $mt(this).height(window_height_mini);
+    });
+     $mt('.block-top-8,.block-top-5 .block-item .slide-carousel').height(window_height);  
+});
+
+</script>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category    MT
+* @package     MT_Extensions
+* Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+* @license     GNU General Public License version 2 or later
+* @author ZooExtension.com
+* @email       magento@cleversoft.co
+*/
+-->
+<config>
+    <modules>
+        <MT_BlogExt>
+            <version>1.0</version>
+        </MT_BlogExt>
+    </modules>
+    <frontend>
+        <routers>
+            <blog>
+                <args>
+                    <modules>
+                        <MT_BlogExt before="AW_Blog">MT_BlogExt</MT_BlogExt>
+                    </modules>
+                </args>
+            </blog>
+        </routers>
+        <layout>
+            <updates>
+                <blogext>
+                    <file>mt_blogext.xml</file>
+                </blogext>
+            </updates>
+        </layout>
+    </frontend>
+</config>

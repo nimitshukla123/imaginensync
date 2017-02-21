@@ -1,0 +1,10 @@
+<div class="collapsible mobile-collapsible">
+<h4><span>Shop</span> <span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Computer" href="#">Computers</a></li>
+<li><a title="Laptops" href="#">Laptops</a></li>
+<li><a title="Tables" href="#">Tables</a></li>
+<li><a title="Mobiles" href="#">Mobiles</a></li>
+<li><a title="Mobiles" href="#">Accessories</a></li>
+</ul>
+</div>

@@ -1,0 +1,65 @@
+<div class="" id="widget-9f471c39c2902b9c53b7d9e3a626bb71">
+		<div class="block block-sample row clearfix">
+		    			 <div class="">
+									<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12  ">
+						<p><a class="logo-footer-top" href="http://127.0.0.1/imaginensync/"><img src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/mtfastion/logo/w-logo.png" alt="" /></a></p>
+<p class="text-wrap-logo">We bring you the perfect shopping experience with hundreds of fashion-forward jewelry, watches, bags, accessories and beauty products.</p>
+<div class="social-footer ">
+<ul>
+<li><a title="Facebook" href="#"><span class="fa fa-facebook">&nbsp;</span></a></li>
+<li><a title="Twitter" href="#"><span class="fa fa-twitter">&nbsp;</span></a></li>
+<li><a title="instagram" href="#"><span class="fa fa-instagram">&nbsp;</span></a></li>
+<li><a title="youtube" href="#"><span class="fa fa-youtube">&nbsp;</span></a></li>
+<li><a title="pinterest" href="#"><span class="fa fa-pinterest">&nbsp;</span></a></li>
+<li><a title="G+" href="#"><span class="fa fa-google-plus">&nbsp;</span></a></li>
+</ul>
+</div>					</div>
+									<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12  ">
+						<div class="collapsible mobile-collapsible">
+<h4><span>Shop</span> <span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Computer" href="#">Computers</a></li>
+<li><a title="Laptops" href="#">Laptops</a></li>
+<li><a title="Tables" href="#">Tables</a></li>
+<li><a title="Mobiles" href="#">Mobiles</a></li>
+<li><a title="Mobiles" href="#">Accessories</a></li>
+</ul>
+</div>					</div>
+									<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12  ">
+						<div class="collapsible mobile-collapsible">
+<h4><span>Useful links</span><span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Shopping Policy" href="#">Shopping Policy</a></li>
+<li><a title="Returns" href="#">Returns</a></li>
+<li><a title="Estimate Delivery Date" href="#">Estimate Delivery Date</a></li>
+<li><a title="Polices" href="#">Polices</a></li>
+<li><a title="Polices" href="#">Support Centre</a></li>
+</ul>
+</div>					</div>
+									<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12  ">
+						<div class="collapsible mobile-collapsible">
+<h4><span>Customer Care</span><span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Products" href="#">Delivery</a></li>
+<li><a title="Community" href="#">Track your order</a></li>
+<li><a title="Products" href="#">Discount</a></li>
+<li><a title="Community" href="#">Returns</a></li>
+<li><a title="Support" href="#">Buy gift cards</a></li>
+</ul>
+<!----></div>					</div>
+							</div>
+		</div>
+	<script type="text/javascript" src="http://127.0.0.1/imaginensync/js/mt/widget/frontend.js"></script>
+    <script type="text/javascript">
+        new MT.Widget('widget-9f471c39c2902b9c53b7d9e3a626bb71', {
+            animation: {"enable":false,"animationName":null,"animationDelay":300,"itemSelector":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/wow\/wow.js"},
+            parallax: {"enable":false,"type":null,"overlay":null,"video":{"src":null,"volume":false,"layout":null,"width":null,"height":null},"image":{"src":null,"fit":null,"repeat":null},"file":{"poster":null,"mp4":null,"webm":null,"volume":false}},
+            carousel: {"enable":false,"pagination":false,"autoPlay":false,"items":4,"singleItem":false,"autoHeight":true,"loop":true,"lazyLoad":true,"lazyEffect":false,"addClassActive":true,"navigation":false,"navigationText":[null,null]},
+            carouselConfig: null,
+            kenburns: {"enable":false,"images":[],"overlay":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/jquery\/plugins\/kenburns.js"},
+            onRefresh: true,
+            onLazyload: false,
+            autoHeight: false
+        });
+    </script>
+</div>

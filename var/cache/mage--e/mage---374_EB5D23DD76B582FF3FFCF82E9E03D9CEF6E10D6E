@@ -1,0 +1,9 @@
+<div class="dropdown sub-wrapper shown-sub" style="height: auto; display: none; overflow: inherit;">
+<ul id="select-store" class="store-switcher" title="Select Store">
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=english">Home 01</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=german">Home 02</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=spainish">Home 03</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=brazil">Home 04</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=arabic">Home RTL</a></li>
+</ul>
+<!----></div>

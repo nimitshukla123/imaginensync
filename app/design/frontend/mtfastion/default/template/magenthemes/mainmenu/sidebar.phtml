@@ -1,0 +1,113 @@
+<!-- navigation BOF -->
+<?php
+require_once 'app/Mage.php';
+umask(0);
+Mage::app('default');
+Mage::getSingleton('core/session', array('name'=>'frontend'));
+$sessionCustomer =Mage::getSingleton("customer/session");
+$catalogSearchHelper = Mage::helper('catalogSearch');
+?>
+<div class="mt-menu mt-effect-slide">
+    <div class="sidebar left-acc">
+        <h4 class="sidebar-title"><span>Canvas Menu</span></h4>
+        <div><?php  echo $this->getLayout()->createBlock('page/switch')->setTemplate('page/switch/languages.phtml')->toHtml(); ?></div>
+        <div><?php  echo $this->getLayout()->createBlock('directory/currency')->setTemplate('directory/currency.phtml')->toHtml(); ?></div>
+        <ul id="mt_accordionmenu" class="nav-accordion nav-mobile-accordion">
+            <li><a href="<?php echo $this->getBaseUrl(); ?>"><?php echo $this->__('Home'); ?></a></li>
+            <?php echo $this->renderCategoriesMenuHtml(FALSE, FALSE, 0, 'level-top'); ?>
+
+            <?php  if(Mage::getStoreConfig('mttechland/menu/enable_custom')){ ?>
+            <li>
+                <?php   
+                    $urlkey = Mage::getStoreConfig('mttechland/menu/url_key');
+                    $arrayUrlKey = explode(";", $urlkey);
+                    foreach($arrayUrlKey as $url){
+                        $condition = explode(':', $url);
+                        $page = Mage::getModel('cms/page')->load($condition[0], 'identifier');
+                        if(isset($condition[1])) $class = 'menu-item-'.$condition[1];
+                        if($page->getIsActive()) {
+                    ?> 
+                        <li class="level0 level-top parent custom-block <?php if($routeName == 'cms' && $identifier == $page->getIdentifier()) {echo " active";}?> <?php echo $class;?>">
+                            <a href="<?php echo Mage::helper('cms/page')->getPageUrl($condition[0]);?>" class="level-top">
+                                <span><?php echo $page->getTitle();?></span>
+                            </a> 
+                        </li> 
+                    <?php 
+                        }
+                    }
+                    ?>
+             </li>
+              <?php  }  ?>
+
+            <li>
+                <?php if ($sessionCustomer->isLoggedIn()) : ?>
+                    <a href="<?php echo $this->getUrl('customer/account/logout') ?>"><i aria-hidden="true" class="icon_lock"></i><span><?php echo $this->__(' Logout') ?></span></a>
+                <?php else: ?>
+                    <a href="<?php echo $this->getUrl('customer/account') ?>"><i aria-hidden="true" class="icon_profile"></i><span><?php echo $this->__(' Register/Login') ?></span></a>
+                <?php endif; ?>
+
+            </li>
+            <li>
+                <a href="<?php echo $this->getUrl('wishlist') ?>">
+                    <i aria-hidden="true" class="icon_heart"></i>
+                    <span><?php echo $this->__(' My Wishlist') ?></span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $this->getUrl('checkout/cart') ?>">
+                    <i aria-hidden="true" class="icon_bag"></i>
+                    <span><?php echo $this->__(' My Cart') ?></span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $this->getUrl('checkout') ?>">
+                    <i aria-hidden="true" class="icon_check_alt"></i>
+                    <span><?php echo $this->__(' Checkout'); ?></span>
+                </a>
+            </li>
+            <li>
+                <form id="search_mini_form_sidebar" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
+                    <div class="form-search">
+                        <!--<label for="search"><?php //echo $this->__('Search:') ?></label>-->
+                        <button type="button" title="<?php echo $this->__('Search') ?>" class="button icon-search">
+                                <span>
+                                   <span><i class="fa fa-search"></i>&nbsp;<?php //echo $this->__('Search') ?></span>
+                                 </span>
+                        </button>
+
+                        <input value="<?php echo $this->__('Search...') ?>" onclick="this.value=='<?php echo $this->__('Search...') ?>'?this.value='':''" onblur="this.value==''?this.value='<?php echo $this->__('Search...') ?>':''" id="search_sidebar" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>"  class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
+
+                        <div id="search_autocomplete_sidebar" class="search-autocomplete"></div>
+                        <button type="button" title="<?php echo $this->__('Search') ?>" class="button close-search">
+                                <span>
+                                   <span><i class="fa fa-times"></i><?php //echo $this->__('') ?></span>
+                                 </span>
+                        </button>
+
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            var searchForm = new Varien.searchForm('search_mini_form_sidebar', 'search_sidebar', '<?php echo $this->__('Search...') ?>');
+                            searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete_sidebar');
+                            //]]>
+                        </script>
+                    </div>
+                </form>
+            </li>
+
+
+        </ul>
+        <script type="text/javascript">
+            $mt(document).ready(function() {
+                $mt("#mt_accordionmenu").mtAccordionMenu({
+                    accordion:true,
+                    speed: 400,
+                    closedSign: 'collapse',
+                    openedSign: 'expand',
+                    mouseType: 0,
+                    easing: 'easeInOutQuad'
+                });
+            });
+        </script>
+    </div>
+</div>
+<div class="site-overlay"></div>

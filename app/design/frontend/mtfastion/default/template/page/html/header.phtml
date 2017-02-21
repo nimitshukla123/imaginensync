@@ -1,0 +1,70 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<?php
+$theme = $this->helper('mtfastion');
+$compareHeader = $theme->getCfg('header/compare');
+$headerLayout = $theme->getCfg('header/layout');
+$stickyEnable = $theme->getCfg('header/sticky_enable');
+$mobileCart = $theme->getCfg('header/hide_on_mobile');
+$logo_retina = Mage::getStoreConfig('mtfastion_design/header/logo_retina_upload');
+$logo = Mage::getStoreConfig('mtfastion_design/header/logo_upload');
+$mediaUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
+$class = $mobileCart ? 'hidden-xs':'';
+require_once 'app/Mage.php';
+umask(0);
+Mage::app('default');
+Mage::getSingleton('core/session', array('name'=>'frontend'));
+$sessionCustomer =Mage::getSingleton("customer/session");
+
+?>
+<header class="header-container <?php echo $headerLayout; ?>">
+    <?php require_once Mage::getBaseDir('base').'/app/design/frontend/mtfastion/default/template/page/html/header_layout/'.$headerLayout.'.phtml';?>
+  
+    <div class="grey-promo">
+        <div class="container">
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('grey-promo')->toHtml(); ?>
+        </div>
+    </div>
+    <?php if($stickyEnable){?>
+        <script type="text/javascript">
+            var showPopupCart = '<?php echo Mage::getStoreConfig('ajaxcart/ajaxcart_config/enable_popupcart');?>';
+            function isRetina() {
+                return ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 75.6dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)').matches)) || (window.devicePixelRatio && window.devicePixelRatio > 2)) && /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+            }
+            $mt(window).load(function(){
+                $mt("#mt-sticky-header").sticky({ topSpacing: 0 });
+                var $logoImg = $mt('.mt-wrapper .header .logo img');
+                if (isRetina())  {
+                    $logoImg.attr('src', $logoImg.attr('src').replace('<?php echo $logo;?>', '<?php echo $logo_retina;?>'));
+                }
+            });
+        </script>
+    <?php }?>
+</header>

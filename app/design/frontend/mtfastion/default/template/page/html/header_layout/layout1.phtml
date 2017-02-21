@@ -1,0 +1,94 @@
+<div class="header">
+    <div class="header-topbar">
+        <div class="container">
+            <div class="toggle-bar visible-sm visible-xs col-sm-2 col-xs-2 slicknav_menu">
+                <a href="#" aria-haspopup="true" tabindex="0" class="mobile-bar slicknav_btn slicknav_collapsed"
+                   style="outline: none;"><span class="slicknav_menutxt"></span><span
+                        class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span
+                            class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+            </div>
+
+            <div class="topbar-option pull-left no-padding hidden-sm hidden-xs">
+                <?php echo $this->getChildHtml('store_language') ?>
+                <?php echo $this->getChildHtml('currency') ?>
+            </div>
+            <div class="topbar-link pull-right no-padding ">
+                <div class="top-bar">
+                    <!-- <div class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></div> -->
+                    <div class="wishlist-topbar hidden-sm hidden-xs">
+                        <a href="<?php echo $this->getUrl('wishlist') ?>"><span><?php echo $this->__('My Wishlist') ?></span></a>
+                    </div>
+                    <?php if ($sessionCustomer->isLoggedIn()) : ?>
+                        <div class="login-topbar hidden-sm hidden-xs">
+                            <a href="<?php echo Mage::getUrl('customer/account/logout'); ?>"><span
+                                    class="hidden-xs"><?php echo $this->__('Logout'); ?></span></a>
+                        </div>
+                    <?php else: ?>
+                        <div class="login-topbar hidden-sm hidden-xs">
+                            <a href="<?php echo Mage::getUrl('customer/account/login'); ?>"><span
+                                    class="hidden-xs"><?php echo $this->__('Login'); ?></span></a>
+                        </div>
+                    <?php endif; ?>
+                    <div class="acc-topbar hidden-sm hidden-xs">
+                        <a href="<?php echo $this->getUrl('customer/account') ?>">
+                            <span><?php echo $this->__('My Account') ?></span></a>
+                    </div>
+
+                    <div class="checkout-topbar hidden-sm hidden-xs">
+                        <a href="<?php echo $this->getUrl('checkout') ?>"><span
+                                class="hidden-xs"><?php echo $this->__('Checkout'); ?></span></a>
+                    </div>
+                    <?php if ($compareHeader) { ?>
+                        <div class="top-compare hidden-sm hidden-xs">
+                            <div class="mt-maincompare">
+                                <?php $_helper = $this->helper('catalog/product_compare'); ?>
+                                <span
+                                    class="mt-text-compare mt-icon"><?php echo $this->__('Compare'); ?></span>
+                                <div class="block-top-compare">
+                                    <?php echo $this->getChildHtml('compareajax') ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    <?php echo $this->getChildHtml('ajaxcart'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom-inner row">
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-sm hidden-xs">
+                    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-text-content')->toHtml(); ?>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="header-logo ">
+                        <h2 class="logo"><a
+                                href="<?php echo $this->getUrl('') ?>"
+                                title="<?php echo $this->getLogoAlt() ?>">
+                                <strong><?php echo $this->getLogoAlt() ?></strong>
+                                <img class="img-responsive"
+                                     src="<?php echo $mediaUrl . 'wysiwyg/magenthemes/mtfastion/logo/' . $logo; ?>"
+                                     alt="<?php echo $this->getLogoAlt() ?>"/></a>
+
+                        </h2>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-sm hidden-xs">
+                    <?php echo $this->getChildHtml('topSearch') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-full hidden-xs hidden-sm" id="mt-sticky-header">
+        <div class="container">
+            <div class="nav-top v-grid row">
+                <div class="box-menu clearfix">
+                    <?php echo $this->getChildHtml('topMenu') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

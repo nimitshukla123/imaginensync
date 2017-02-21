@@ -1,0 +1,329 @@
+<!-- navigation BOF -->
+<div class="mt-menu mt-effect-slide">
+    <div class="sidebar left-acc">
+        <h4 class="sidebar-title"><span>Canvas Menu</span></h4>
+        <div>
+<div class="language-topbar">
+	<div class="lang-curr">
+					<span class="img-flag"><img src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/languages/english.png" alt="English"/></span>
+				<span class="title hidden-xs">English</span>
+		<i class="fa fa-caret-down"></i>
+	</div>
+	<div class="lang-list">
+		<ul>
+					<li>
+				<a href="http://127.0.0.1/imaginensync/index.php/?___SID=U&amp;___store=arabic&amp;___from_store=english">
+											<span class="img-flag"><img src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/languages/arabic.png" alt="arabic"></span>
+										<span class="lang-name">Arabic</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://127.0.0.1/imaginensync/index.php/?___SID=U&amp;___store=english&amp;___from_store=english">
+											<span class="img-flag"><img src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/languages/english.png" alt="english"></span>
+										<span class="lang-name">English</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://127.0.0.1/imaginensync/index.php/?___SID=U&amp;___store=german&amp;___from_store=english">
+											<span class="img-flag"><img src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/languages/german.png" alt="german"></span>
+										<span class="lang-name">German</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://127.0.0.1/imaginensync/index.php/?___SID=U&amp;___store=spainish&amp;___from_store=english">
+											<span class="img-flag"><img src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/languages/spanish.png" alt="spanish"></span>
+										<span class="lang-name">Spanish</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://127.0.0.1/imaginensync/index.php/?___SID=U&amp;___store=brazil&amp;___from_store=english">
+											<span class="img-flag"><img src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/languages/brazil.png" alt="brazil"></span>
+										<span class="lang-name">Brazil</span>
+				</a>
+			</li>
+				</ul>
+	</div>
+</div>
+
+</div>
+        <div></div>
+        <ul id="mt_accordionmenu" class="nav-accordion nav-mobile-accordion">
+            <li><a href="http://127.0.0.1/imaginensync/index.php/">Home</a></li>
+            <li class="level0 nav-1 level-top first mega_align_left parent">
+<a href="http://127.0.0.1/imaginensync/index.php/men.html?___SID=U" class="level-top">
+
+<span>Men</span>
+</a>
+<div class="mtmenu-block mtmenu-block-center menu-items grid12-9 itemgrid itemgrid-4col">
+<ul class="level0">
+<li class="level1 groups item nav-1-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top.html?___SID=U">
+
+<span class="title_group">Top</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/shirt.html?___SID=U">
+
+<span>Shirt</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/florals.html?___SID=U">
+
+<span>Florals</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/crochet.html?___SID=U">
+
+<span>Crochet</span>
+</a>
+</li><li class="level2 nav-1-1-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/stripes.html?___SID=U">
+
+<span>Stripes</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 groups item nav-1-2">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom.html?___SID=U">
+
+<span class="title_group">Bottom</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-2-5 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/short.html?___SID=U">
+
+<span>Short</span>
+</a>
+</li><li class="level2 nav-1-2-6">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level2 nav-1-2-7">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/indoor.html?___SID=U">
+
+<span>Indoor</span>
+</a>
+</li><li class="level2 nav-1-2-8 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/sport.html?___SID=U">
+
+<span>Sport</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 groups item nav-1-3">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes.html?___SID=U">
+
+<span class="title_group">Shoes</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-3-9 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/sport.html?___SID=U">
+
+<span>Sport</span>
+</a>
+</li><li class="level2 nav-1-3-10">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level2 nav-1-3-11">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/leather.html?___SID=U">
+
+<span>Leather</span>
+</a>
+</li><li class="level2 nav-1-3-12 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/canvas.html?___SID=U">
+
+<span>Canvas</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 groups item nav-1-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories.html?___SID=U">
+
+<span class="title_group">Accessories</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-4-13 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/belt.html?___SID=U">
+
+<span>Belt</span>
+</a>
+</li><li class="level2 nav-1-4-14">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/scarves.html?___SID=U">
+
+<span>Scarves</span>
+</a>
+</li><li class="level2 nav-1-4-15">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/sunglasses.html?___SID=U">
+
+<span>Sunglasses</span>
+</a>
+</li><li class="level2 nav-1-4-16 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/jewelry.html?___SID=U">
+
+<span>Jewelry</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="menu-static-blocks mtmenu-block mtmenu-block-right grid12-3">
+<img  class="img-responsive" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/static/mega_images_1.jpg" alt="" />
+</div>
+</li><li class="level0 nav-2 level-top m-dropdown mega_align_left parent">
+<a href="http://127.0.0.1/imaginensync/index.php/women.html?___SID=U" class="level-top">
+
+<span>Women</span>
+</a>
+<div class="mtmenu-block mtmenu-block-center menu-items grid12-12 itemgrid itemgrid-4col">
+<ul class="level0">
+<li class="level1 item nav-2-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/women/sleepwear.html?___SID=U">
+
+<span>Sleepwear</span>
+</a>
+</li><li class="level1 item nav-2-2">
+<a href="http://127.0.0.1/imaginensync/index.php/women/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level1 item nav-2-3">
+<a href="http://127.0.0.1/imaginensync/index.php/women/indoor.html?___SID=U">
+
+<span>Indoor</span>
+</a>
+</li><li class="level1 item nav-2-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/women/outdoor.html?___SID=U">
+
+<span>Outdoor</span>
+</a>
+</li>
+</ul>
+</div>
+</li><li class="level0 nav-3 level-top m-dropdown last mega_align_left parent">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories.html?___SID=U" class="level-top">
+
+<span>Accessories</span>
+</a>
+<div class="mtmenu-block mtmenu-block-center menu-items grid12-12 itemgrid itemgrid-4col">
+<ul class="level0">
+<li class="level1 item nav-3-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/hat.html?___SID=U">
+
+<span>Hat</span>
+</a>
+</li><li class="level1 item nav-3-2">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes.html?___SID=U">
+
+<span>Shoes</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-3-2-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/sport.html?___SID=U">
+
+<span>Sport</span>
+</a>
+</li><li class="level2 nav-3-2-2">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level2 nav-3-2-3">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/sneaker.html?___SID=U">
+
+<span>Sneaker</span>
+</a>
+</li><li class="level2 nav-3-2-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/boot.html?___SID=U">
+
+<span>Boot</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 item nav-3-3">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/glasses.html?___SID=U">
+
+<span>Glasses</span>
+</a>
+</li><li class="level1 item nav-3-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/footerwear.html?___SID=U">
+
+<span>Footerwear</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+            
+            <li>
+                                    <a href="http://127.0.0.1/imaginensync/index.php/customer/account/?___SID=U"><i aria-hidden="true" class="icon_profile"></i><span> Register/Login</span></a>
+                
+            </li>
+            <li>
+                <a href="http://127.0.0.1/imaginensync/index.php/wishlist/?___SID=U">
+                    <i aria-hidden="true" class="icon_heart"></i>
+                    <span> My Wishlist</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1/imaginensync/index.php/checkout/cart/?___SID=U">
+                    <i aria-hidden="true" class="icon_bag"></i>
+                    <span> My Cart</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1/imaginensync/index.php/checkout/?___SID=U">
+                    <i aria-hidden="true" class="icon_check_alt"></i>
+                    <span> Checkout</span>
+                </a>
+            </li>
+            <li>
+                <form id="search_mini_form_sidebar" action="http://127.0.0.1/imaginensync/index.php/catalogsearch/result/?___SID=U" method="get">
+                    <div class="form-search">
+                        <!--<label for="search"></label>-->
+                        <button type="button" title="Search" class="button icon-search">
+                                <span>
+                                   <span><i class="fa fa-search"></i>&nbsp;</span>
+                                 </span>
+                        </button>
+
+                        <input value="Search..." onclick="this.value=='Search...'?this.value='':''" onblur="this.value==''?this.value='Search...':''" id="search_sidebar" type="text" name="q"  class="input-text" maxlength="128" />
+
+                        <div id="search_autocomplete_sidebar" class="search-autocomplete"></div>
+                        <button type="button" title="Search" class="button close-search">
+                                <span>
+                                   <span><i class="fa fa-times"></i></span>
+                                 </span>
+                        </button>
+
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            var searchForm = new Varien.searchForm('search_mini_form_sidebar', 'search_sidebar', 'Search...');
+                            searchForm.initAutocomplete('http://127.0.0.1/imaginensync/index.php/catalogsearch/ajax/suggest/?___SID=U', 'search_autocomplete_sidebar');
+                            //]]>
+                        </script>
+                    </div>
+                </form>
+            </li>
+
+
+        </ul>
+        <script type="text/javascript">
+            $mt(document).ready(function() {
+                $mt("#mt_accordionmenu").mtAccordionMenu({
+                    accordion:true,
+                    speed: 400,
+                    closedSign: 'collapse',
+                    openedSign: 'expand',
+                    mouseType: 0,
+                    easing: 'easeInOutQuad'
+                });
+            });
+        </script>
+    </div>
+</div>
+<div class="site-overlay"></div>

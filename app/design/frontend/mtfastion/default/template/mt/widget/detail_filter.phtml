@@ -1,0 +1,29 @@
+<?php
+/**
+ * @category    MT
+ * @package     MT_Widget
+ * Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+ * @license     GNU General Public License version 2 or later
+ * @author ZooExtension.com
+ * @email       magento@cleversoft.co
+ */
+?>
+<?php $helper = Mage::helper('mtwidget');?>
+<ol>
+    <?php foreach ($this->getItems() as $_item): ?>
+        <li>
+            <?php if ($_item->getCount() > 0): ?>
+                <a href="<?php echo $this->urlEscape($helper->buildFilterUrl($this->getData('url'),$_item->getUrl())) ?>" data-column="<?php echo $this->getData('column') ?>" data-filter="<?php echo $_item->getFilter()->getRequestVar() ?>" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"  data-value="<?php echo $_item->getValue() ?>"><?php echo $_item->getLabel() ?></a>
+            <?php else: echo $_item->getLabel() ?>
+            <?php endif; ?>
+        </li>
+
+    <?php endforeach ?>
+    <?php foreach ($states as $_state): ?>
+        <?php if($_state->getName() == $this->getName()):?>
+            <li>
+                <a  class="btn-remove" data-limit="<?php echo $this->getData('limit')?>" data-numloadmore="<?php echo $this->getData('num_loadmore')?>" data-filter="<?php echo $_state->getName() ?>"  data-column="<?php echo $this->getData('column')?>" href="<?php echo $_state->getRemoveUrl() ?>" title="<?php echo $this->__('Remove This Item') ?>"><?php echo $_state->getLabel() . '<span class="remove-item">'. $this->__('---->Remove This Item') . '</span>' ?></a>
+            </li>
+        <?php endif;?>
+    <?php endforeach ?>
+</ol>

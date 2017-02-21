@@ -1,0 +1,15 @@
+<?php if ($posts = $this->getRecent()): ?>
+<div class="recent-post-sidebar">
+<h5>RECENT POST</h5>
+<?php foreach ($posts as $post): ?>
+    <div class="postWrapper">
+        <div class="img-post"><?php if($post->getData('thumbnail')){ ?><img alt="<?php echo $post->getTitle(); ?>" src="<?php echo Mage::getBaseUrl('media').$post->getData('thumbnail'); ?>" /><?php } ?></div>
+        <div class="postTitle">
+            <h2><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></h2>
+        </div>
+       <div class="created-post"><?php echo $post->getCreatedTime(); ?></div> 
+    </div>
+<?php endforeach; ?>
+</div>
+<?php endif; ?>
+

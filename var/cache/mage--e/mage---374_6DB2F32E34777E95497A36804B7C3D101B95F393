@@ -1,0 +1,10 @@
+<div class="collapsible mobile-collapsible">
+<h4><span>Customer Care</span><span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Products" href="#">Delivery</a></li>
+<li><a title="Community" href="#">Track your order</a></li>
+<li><a title="Products" href="#">Discount</a></li>
+<li><a title="Community" href="#">Returns</a></li>
+<li><a title="Support" href="#">Buy gift cards</a></li>
+</ul>
+<!----></div>

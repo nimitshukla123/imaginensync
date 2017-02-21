@@ -1,0 +1,65 @@
+<?php
+/**
+ * @category    MT
+ * @package     MT_Instagram
+ * Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+ * @license     GNU General Public License version 2 or later
+ * @author ZooExtension.com
+ * @email       magento@cleversoft.co
+ */
+?>
+<?php
+$client_id = Mage::getStoreConfig('mtinstagram/configure/client_id');
+$instagram_get_by = Mage::getStoreConfig('mtinstagram/configure/type');
+$instagram_user_id = Mage::getStoreConfig('mtinstagram/configure/user_id');
+$instagram_hash_tag = Mage::getStoreConfig('mtinstagram/configure/hash_tag');
+$instagram_token = Mage::getStoreConfig('mtinstagram/configure/token');
+if($instagram_get_by == 'user')
+    $instagram_fetch = $instagram_user_id;
+else
+    $instagram_fetch = $instagram_hash_tag;
+
+$title = $this->getData('widget_title');
+$class = $this->getData('classes');
+$width = $this->getData('width');
+if(!strpos($width,'px') && !strpos($width,'%')) $width = $width . 'px';
+$height = $this->getData('height');
+if(!strpos($height,'px') && !strpos($height,'%')) $height = $height . 'px';
+$bg_color = $this->getData('background_color');
+$limit = $this->getData('num_of_photos');
+$cols = $this->getData('column');
+$sort = (string)$this->getData('sort')!= ''  ? $this->getData('sort') : 'none';
+$show_header = $this->getData('show_header');
+$padding = $this->getData('padding');
+if(!strpos($padding,'px') && !strpos($padding,'%')) $padding = $padding . 'px';
+$show_btn_more = $this->getData('show_btn_more');
+$btn_loadmore_label = $this->getData('btn_more');
+$show_btn_follow = $this->getData('show_btn_folow');
+$btn_follow_label = $this->getData('btn_folow');
+$show_like = $this->getData('show_like');
+$show_comment = $this->getData('show_comment');
+$show_caption = $this->getData('show_caption');
+$style = "width : " . $width . ";height : " . $height . ";background-color: " . $bg_color . ";";
+?>
+<div id="sb_instagram" class="mt-instagram <?php echo $class ?> sbi sbi_col_<?php echo $cols;?>" style="<?php echo $style ?>" data-show-caption="<?php echo $show_caption; ?>" data-show-like="<?php echo $show_like; ?>" data-show-comment="<?php echo $show_comment; ?>" data-show-comment="<?php ?>" data-get-by="<?php echo $instagram_get_by; ?>" data-id="<?php echo $instagram_fetch; ?>" data-num="<?php echo $limit; ?>" data-res="auto" data-cols="<?php echo $cols; ?>" data-options='{"sortby": "<?php echo $sort; ?>", "headercolor": ""}' >
+    <?php if(!empty($title)): ?>
+    <div class="title"><label><?php echo $title;?></label></div>
+    <?php endif;?>
+    <?php if($show_header) : ?>
+        <div class="sb_instagram_header"></div>
+    <?php endif; ?>
+    <div id="sbi_images" style="padding: <?php echo $padding;?>"></div>
+    <?php if($show_btn_more || $show_btn_follow): ?>
+    <div id="sbi_load" style="padding-top: 5px;">
+        <?php if($show_btn_more): ?><a class="sbi_load_btn" href="javascript:void(0);"><?php echo $btn_loadmore_label; ?></a> <?php endif; ?>
+
+        <?php if($show_btn_follow): ?><div class="sbi_follow_btn"><a href="http://instagram.com/" target="_blank"><i class="fa fa-instagram"></i><?php echo $btn_follow_label; ?></a></div><?php endif; ?>
+
+    </div>
+    <?php endif; ?>
+    <script type="text/javascript" src="<?php echo Mage::getBaseUrl('js') ?>mt/instagramfeed/instagram-feed.js"></script>
+    <script type="text/javascript">
+        var sb_instagram_js_options = {"sb_instagram_at":"<?php echo $instagram_token;?>","sb_client_id":"<?php echo $client_id;?>"};
+        sbi_init();
+    </script>
+</div>

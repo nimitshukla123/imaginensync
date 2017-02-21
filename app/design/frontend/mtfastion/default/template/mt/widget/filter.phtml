@@ -1,0 +1,58 @@
+<?php
+/**
+ * @category    MT
+ * @package     MT_Widget
+ * Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+ * @license     GNU General Public License version 2 or later
+ * @author ZooExtension.com
+ * @email       magento@cleversoft.co
+ */
+?>
+<?php
+$filters = $this->getData('filters');
+?>
+<div class="widget-filter">
+    <?php echo $this->getData('layerState'); ?>
+    <ul class="narrow-by-list">
+        <?php foreach ($filters as $_filter): ?>
+            <?php if($_filter->getItemsCount() ||  in_array($_filter->getName(), $this->getData('stateName'))): ?>
+                <li>
+                    <h5><?php echo $this->__($_filter->getName()) ?></h5>
+                    <div><?php echo $_filter->getHtml() ?></div>
+                </li>
+            <?php endif; ?>
+        <?php endforeach; ?>
+        <li>
+        <h5><?php echo Mage::helper('core')->__('Sort By');?></h5>
+        <div>
+            <ol>
+                <li>
+                    <a href="<?php echo $this->getData('url').'dir=asc&order=name';?>"  data-column="<?php echo $this->getData('column') ?>" data-filter="name" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><?php echo Mage::helper('core')->__('Name: Low to Hight');?></a>
+                    <?php if($this->getData('typeSoft') == 'ascname'): ?>
+                    <a href="<?php echo $this->getData('url'); ?>" data-column="<?php echo $this->getData('column') ?>" data-filter="price" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><span class="remove-item">----&gt;Remove This Item</span></span></a>
+                    <?php endif; ?>
+                </li>
+                <li>
+                    <a href="<?php echo $this->getData('url').'dir=desc&order=name';?>" data-column="<?php echo $this->getData('column') ?>" data-filter="name" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><?php echo Mage::helper('core')->__('Name: Hight to Low');?></a>
+                    <?php if($this->getData('typeSoft') == 'descname'): ?>
+                        <a href="<?php echo $this->getData('url'); ?>" data-column="<?php echo $this->getData('column') ?>" data-filter="name" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><span class="remove-item">----&gt;Remove This Item</span></span></a>
+                    <?php endif; ?>
+                </li>
+                <li>
+                    <a href="<?php echo $this->getData('url').'dir=asc&order=price';?>" data-column="<?php echo $this->getData('column') ?>" data-filter="price" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><?php echo Mage::helper('core')->__('Price: Low to Hight');?></a>
+                    <?php if($this->getData('typeSoft') == 'ascprice'): ?>
+                        <a href="<?php echo $this->getData('url'); ?>" data-column="<?php echo $this->getData('column') ?>" data-filter="price" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><span class="remove-item">----&gt;Remove This Item</span></span></a>
+                    <?php endif; ?>
+                </li>
+                <li>
+                    <a href="<?php echo $this->getData('url').'dir=desc&order=price';?>" data-column="<?php echo $this->getData('column') ?>" data-filter="price" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><?php echo Mage::helper('core')->__('Price: Hight to Low');?></a>
+                    <?php if($this->getData('typeSoft') == 'descprice'): ?>
+                        <a href="<?php echo $this->getData('url'); ?>" data-column="<?php echo $this->getData('column') ?>" data-filter="price" data-limit="<?php echo $this->getData('limit') ?>" data-numloadmore="<?php echo $this->getData('num_loadmore') ?>" data-offset="0"><span class="remove-item">----&gt;Remove This Item</span></span></a>
+                    <?php endif; ?>
+                </li>
+            </ol>
+        </div>
+    </li>
+    </ul>
+    
+</div>

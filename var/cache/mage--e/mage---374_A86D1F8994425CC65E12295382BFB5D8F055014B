@@ -1,0 +1,40 @@
+<div class="" id="widget-0d30626cfe4341c3263cd2206469c11a">
+		<div class="block block-sample row clearfix">
+		    			 <div class="">
+									<div class="col-lg-12  col-md-12  col-sm-12  col-xs-12  ">
+						<div class="bann-block01">
+<div class="inner-block">
+<div class="col-lg-6 col-xs-12 block-section">
+<div class="inner-block">
+<div class="images"><img alt="" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/mtfastion/images/block_slide1.jpg" /></div>
+<div class="content">
+<h2>shoes</h2>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-xs-12">
+<div class="inner-block block-section">
+<div class="images"><img alt="" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/mtfastion/images/block_slide2.jpg" /></div>
+<div class="content">
+<h2>bags</h2>
+</div>
+</div>
+</div>
+</div>
+</div>					</div>
+							</div>
+		</div>
+	<script type="text/javascript" src="http://127.0.0.1/imaginensync/js/mt/widget/frontend.js"></script>
+    <script type="text/javascript">
+        new MT.Widget('widget-0d30626cfe4341c3263cd2206469c11a', {
+            animation: {"enable":false,"animationName":null,"animationDelay":300,"itemSelector":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/wow\/wow.js"},
+            parallax: {"enable":false,"type":null,"overlay":null,"video":{"src":null,"volume":false,"layout":null,"width":null,"height":null},"image":{"src":null,"fit":null,"repeat":null},"file":{"poster":null,"mp4":null,"webm":null,"volume":false}},
+            carousel: {"enable":false,"pagination":false,"autoPlay":false,"items":4,"singleItem":false,"autoHeight":true,"loop":true,"lazyLoad":true,"lazyEffect":false,"addClassActive":true,"navigation":false,"navigationText":[null,null]},
+            carouselConfig: null,
+            kenburns: {"enable":false,"images":[],"overlay":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/jquery\/plugins\/kenburns.js"},
+            onRefresh: true,
+            onLazyload: false,
+            autoHeight: false
+        });
+    </script>
+</div>

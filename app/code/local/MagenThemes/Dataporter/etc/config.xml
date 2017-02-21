@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author		MagenThemes
+ * @copyright	Copyright (c) 2015 MagenThemes
+ */
+-->
+<config>
+	<modules>
+		<MagenThemes_Dataporter>
+			<version>1.0.0</version>
+		</MagenThemes_Dataporter>
+	</modules>
+	<global>
+		<blocks>
+			<dataporter>
+				<class>MagenThemes_Dataporter_Block</class>
+			</dataporter>
+		</blocks>
+		<helpers>
+			<dataporter>
+				<class>MagenThemes_Dataporter_Helper</class>
+			</dataporter>
+		</helpers>
+		<models>
+			<dataporter>
+				<class>MagenThemes_Dataporter_Model</class>
+			</dataporter>
+		</models>
+	</global>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<dataporter before="Mage_Adminhtml">MagenThemes_Dataporter_Adminhtml</dataporter>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+</config>

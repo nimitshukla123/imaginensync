@@ -1,0 +1,26 @@
+2015-12-07T07:50:42+00:00 DEBUG (7): -------------------------------------------------------------------
+2015-12-07T07:50:42+00:00 DEBUG (7): ---- SUPEE-6788 Developer Toolbox by ParadoxLabs ------------------
+2015-12-07T07:50:42+00:00 DEBUG (7):   https://github.com/rhoerr/supee-6788-toolbox
+2015-12-07T07:50:42+00:00 DEBUG (7):   Time: 2015-12-07T07:50:42+00:00
+2015-12-07T07:50:42+00:00 DEBUG (7): ---- Loading whitelists -------------------------------------------
+2015-12-07T07:50:42+00:00 DEBUG (7): ---- Searching config for bad routers -----------------------------
+2015-12-07T07:50:42+00:00 DEBUG (7): ---- Moving controllers for bad routers to avoid conflicts --------
+2015-12-07T07:50:42+00:00 DEBUG (7): ---- Searching files for bad routes -------------------------------
+2015-12-07T07:50:45+00:00 DEBUG (7): ---- Searching for whitelist problems -----------------------------
+2015-12-07T10:06:25+00:00 DEBUG (7): -------------------------------------------------------------------
+2015-12-07T10:06:25+00:00 DEBUG (7): ---- SUPEE-6788 Developer Toolbox by ParadoxLabs ------------------
+2015-12-07T10:06:25+00:00 DEBUG (7):   https://github.com/rhoerr/supee-6788-toolbox
+2015-12-07T10:06:25+00:00 DEBUG (7):   Time: 2015-12-07T10:06:25+00:00
+2015-12-07T10:06:25+00:00 DEBUG (7): ---- Loading whitelists -------------------------------------------
+2015-12-07T10:06:25+00:00 DEBUG (7): ---- Searching config for bad routers -----------------------------
+2015-12-07T10:06:25+00:00 DEBUG (7): ---- Moving controllers for bad routers to avoid conflicts --------
+2015-12-07T10:06:25+00:00 DEBUG (7): ---- Searching files for bad routes -------------------------------
+2015-12-07T10:06:28+00:00 DEBUG (7): ---- Searching for whitelist problems -----------------------------
+2015-12-07T10:06:28+00:00 DEBUG (7): ---- Summary ------------------------------------------------------
+2015-12-07T10:06:28+00:00 DEBUG (7): Affected Modules:
+  
+2015-12-07T10:06:28+00:00 DEBUG (7): Affected Files:
+  
+2015-12-07T10:06:28+00:00 DEBUG (7): Issues:
+  
+2015-12-07T10:06:28+00:00 DEBUG (7): See var/log/fixSUPEE6788.log for a record of all results.

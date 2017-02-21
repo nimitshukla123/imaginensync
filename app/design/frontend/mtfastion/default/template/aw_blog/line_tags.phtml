@@ -1,0 +1,9 @@
+<h4><?php echo $this->__('TAGS'); ?>: </h4>
+<div class="tags">
+    <?php
+    $tags = explode(',', $this->getPost()->getTags());
+
+    foreach ($tags as $tag): ?>
+        <a href="<?php echo Mage::getUrl(Mage::helper('blog')->getRoute() . '/tag/' . urlencode($tag)) ?>"><?php echo $tag ?></a>, 
+    <?php endforeach; ?>
+</div>

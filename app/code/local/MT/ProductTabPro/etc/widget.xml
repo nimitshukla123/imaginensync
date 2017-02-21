@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category    MT
+* @package     MT_Deal
+* Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+* @license     GNU General Public License version 2 or later
+* @author ZooExtension.com
+* @email       magento@cleversoft.co
+*/
+-->
+<widgets>
+    <producttabpro type="producttabpro/producttabpro" translate="">
+        <name>MT ProductTabPro</name>
+        <description>Show product</description>
+        <parameters>
+            <scroll translate="label">
+                <label>Enable Carousel</label>
+                <visible>1</visible>
+                <value>0</value>
+                <type>select</type>
+                <helper_block>
+                    <type>mtwidget/adminhtml_widget_form_field_column</type>
+                </helper_block>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <description>Enable Carousel</description>
+            </scroll>
+            <autoplay translate="label">
+                <label>Slideshow</label>
+                <visible>1</visible>
+                <type>text</type>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                </depends>
+                <description>Change to any integrer for example 5000 to play every 5 seconds. Leave empty to disable autoplay.</description>
+            </autoplay>
+            <paging translate="label">
+                <label>Show Paging</label>
+                <visible>1</visible>
+                <value>0</value>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                </depends>
+                <description>Show pagination</description>
+            </paging>
+            <navigation translate="label">
+                <label>Show Navigation</label>
+                <visible>1</visible>
+                <value>0</value>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                </depends>
+                <description>Show navigation</description>
+            </navigation>
+            <navigation_prev translate="label">
+                <label>Prev Navigation</label>
+                <visible>1</visible>
+                <type>text</type>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                    <navigation>
+                        <value>1</value>
+                    </navigation>
+                </depends>
+                <description>Prev navigation text</description>
+            </navigation_prev>
+            <navigation_next translate="label">
+                <label>Next Navigation</label>
+                <visible>1</visible>
+                <type>text</type>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                    <navigation>
+                        <value>1</value>
+                    </navigation>
+                </depends>
+                <description>Next navigation text</description>
+            </navigation_next>
+            <left_block translate="label description">
+                <label>Block Left</label>
+                <visible>1</visible>
+                <type>select</type>
+                <required>1</required>
+                <source_model>producttabpro/source_type</source_model>
+                <description>Display content on the left</description>
+            </left_block>
+            <left_title translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>text</type>
+                <required>1</required>
+                <depends>
+                    <left_block>
+                        <values>
+                            <product>product</product>
+                        </values>
+                    </left_block>
+                </depends>
+                <description>Block Left Title</description>
+            </left_title>
+            <left_tab translate="label description">
+                <label>Enable Tabs</label>
+                <visible>1</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <depends>
+                    <left_block>
+                        <value>product</value>
+                    </left_block>
+                </depends>
+                <description>Enable tab on widget</description>
+            </left_tab>
+            <left_category translate="label description">
+                <visible>1</visible>
+                <type>mtwidget/adminhtml_widget_renderer_category</type>
+                <depends>
+                    <left_block>
+                        <values>
+                            <product>product</product>
+                        </values>
+                    </left_block>
+                </depends>
+                <description>If category is selected, the product collection will be filtered by this categories</description>
+            </left_category>
+            <left_collection translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>mtwidget/adminhtml_widget_form_element_collection</type>
+                <source_model>mtwidget/widget_source_tab_mode</source_model>
+                <depends>
+                    <left_block>
+                        <value>product</value>
+                    </left_block>
+                </depends>
+                <description><![CDATA[The product collections for tabs. Drag & drop for order of collections]]></description>
+            </left_collection>
+            <left_static_block translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>select</type>
+                <required>0</required>
+                <source_model>mtwidget/widget_source_block</source_model>
+                <depends>
+                    <left_block>
+                        <value>block</value>
+                    </left_block>
+                </depends>
+                <description>Choose blocks to show</description>
+            </left_static_block>
+            <left_limit translate="label">
+                <label></label>
+                <visible>1</visible>
+                <value>10</value>
+                <type>text</type>
+                <depends>
+                    <left_block>
+                        <value>product</value>
+                    </left_block>
+                </depends>
+                <description>Limit number of products show on widget</description>
+            </left_limit>
+            <left_row translate="label description">
+                <label></label>
+                <class>validate-number</class>
+                <visible>1</visible>
+                <value>1</value>
+                <type>text</type>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                </depends>
+                <description>Limit number of rows on widget</description>
+            </left_row>
+            <left_column translate="label description">
+                <label></label>
+                <class>validate-number</class>
+                <visible>1</visible>
+                <value>4</value>
+                <type>text</type>
+                <description>Limit number of items on row</description>
+            </left_column>
+            <middle_block translate="label description">
+                <label>Block Middle</label>
+                <visible>1</visible>
+                <type>select</type>
+                <required>1</required>
+                <source_model>producttabpro/source_type</source_model>
+                <description>Display content on the middle</description>
+            </middle_block>
+            <middle_title translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>text</type>
+                <required>1</required>
+                <depends>
+                    <middle_block>
+                        <value>product</value>
+                    </middle_block>
+                </depends>
+                <description>Block Middle Title</description>
+            </middle_title>
+            <middle_tab translate="label description">
+                <label>Enable Tabs</label>
+                <visible>1</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <depends>
+                    <middle_block>
+                        <value>product</value>
+                    </middle_block>
+                </depends>
+                <description>Enable tab on widget</description>
+            </middle_tab>
+            <middle_static_block translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>select</type>
+                <required>0</required>
+                <source_model>mtwidget/widget_source_block</source_model>
+                <depends>
+                    <middle_block>
+                        <value>block</value>
+                    </middle_block>
+                </depends>
+                <description>Choose blocks to show</description>
+            </middle_static_block>
+            <middle_category translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>mtwidget/adminhtml_widget_renderer_category</type>
+                <depends>
+                    <middle_block>
+                        <values>
+                            <product>product</product>
+                        </values>
+                    </middle_block>
+                </depends>
+                <description>If category is selected, the product collection will be filtered by this categories</description>
+            </middle_category>
+            <middle_collections translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>mtwidget/adminhtml_widget_form_element_collection</type>
+                <source_model>mtwidget/widget_source_tab_mode</source_model>
+                <depends>
+                    <middle_block>
+                        <value>product</value>
+                    </middle_block>
+                </depends>
+                <description><![CDATA[The product collections for tabs. Drag & drop for order of collections]]></description>
+            </middle_collections>
+            <middle_limit translate="label">
+                <label></label>
+                <visible>1</visible>
+                <value>10</value>
+                <type>text</type>
+                <depends>
+                    <middle_block>
+                        <value>product</value>
+                    </middle_block>
+                </depends>
+                <description>Limit number of products show on widget</description>
+            </middle_limit>
+            <middle_row translate="label description">
+                <label></label>
+                <class>validate-number</class>
+                <visible>1</visible>
+                <value>1</value>
+                <type>text</type>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                </depends>
+                <description>Limit number of rows on widget</description>
+            </middle_row>
+            <middle_column translate="label description">
+                <label></label>
+                <class>validate-number</class>
+                <visible>1</visible>
+                <value>4</value>
+                <type>text</type>
+                <description>Limit number of items on row</description>
+            </middle_column>
+            <right_block translate="label description">
+                <label>Block Right</label>
+                <visible>1</visible>
+                <type>select</type>
+                <required>1</required>
+                <source_model>producttabpro/source_type</source_model>
+                <description>Display content on the right</description>
+            </right_block>
+            <right_title translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>text</type>
+                <required>1</required>
+                <depends>
+                    <right_block>
+                        <value>product</value>
+                    </right_block>
+                </depends>
+                <description>Block Right Title</description>
+            </right_title>
+            <right_tab translate="label description">
+                <label>Enable Tabs</label>
+                <visible>1</visible>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <depends>
+                    <right_block>
+                        <value>product</value>
+                    </right_block>
+                </depends>
+                <description>Enable tab on widget</description>
+            </right_tab>
+            <right_static_block translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>select</type>
+                <required>0</required>
+                <source_model>mtwidget/widget_source_block</source_model>
+                <depends>
+                    <right_block>
+                        <value>block</value>
+                    </right_block>
+                </depends>
+                <description>Choose blocks to show</description>
+            </right_static_block>
+            <right_category translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>mtwidget/adminhtml_widget_renderer_category</type>
+                <depends>
+                    <right_block>
+                        <values>
+                            <product>product</product>
+                        </values>
+                    </right_block>
+                </depends>
+                <description>If category is selected, the product collection will be filtered by this categories</description>
+            </right_category>
+            <right_collections translate="label description">
+                <label></label>
+                <visible>1</visible>
+                <type>mtwidget/adminhtml_widget_form_element_collection</type>
+                <source_model>mtwidget/widget_source_tab_mode</source_model>
+                <depends>
+                    <right_block>
+                        <value>product</value>
+                    </right_block>
+                </depends>
+                <description><![CDATA[The product collections for tabs. Drag & drop for order of collections]]></description>
+            </right_collections>
+            <right_limit translate="label">
+                <label></label>
+                <visible>1</visible>
+                <value>10</value>
+                <type>text</type>
+                <depends>
+                    <right_block>
+                        <value>product</value>
+                    </right_block>
+                </depends>
+                <description>Limit number of products show on widget</description>
+            </right_limit>
+            <right_row translate="label description">
+                <label></label>
+                <class>validate-number</class>
+                <visible>1</visible>
+                <value>1</value>
+                <type>text</type>
+                <depends>
+                    <scroll>
+                        <value>1</value>
+                    </scroll>
+                </depends>
+                <description>Limit number of rows on widget</description>
+            </right_row>
+            <right_column translate="label description">
+                <label></label>
+                <class>validate-number</class>
+                <visible>1</visible>
+                <value>4</value>
+                <type>text</type>
+                <description>Limit number of items on row</description>
+            </right_column>
+
+            <template>
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <values>
+                    <producttabpro translate="label">
+                        <value>mt/producttabpro/producttabpro.phtml</value>
+                        <label>producttabpro</label>
+                    </producttabpro>
+                </values>
+            </template>
+        </parameters>
+    </producttabpro>
+</widgets>

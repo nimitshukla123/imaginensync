@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category    MT
+* @package     MT_Deal
+* Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+* @license     GNU General Public License version 2 or later
+* @author ZooExtension.com
+* @email       magento@cleversoft.co
+*/
+-->
+<config>
+    <modules>
+        <MT_ProductTabPro>
+            <version>1.0</version>
+        </MT_ProductTabPro>
+    </modules>
+    <frontend>
+        <routers>
+            <producttabpro>
+                <use>standard</use>
+                <args>
+                    <module>MT_ProductTabPro</module>
+                    <frontName>producttabpro</frontName>
+                </args>
+            </producttabpro>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <producttabpro>
+                <class>MT_ProductTabPro_Block</class>
+            </producttabpro>
+        </blocks>
+        <helpers>
+            <producttabpro>
+                <class>MT_ProductTabPro_Helper</class>
+            </producttabpro>
+        </helpers>
+        <models>
+            <producttabpro>
+                <class>MT_ProductTabPro_Model</class>
+            </producttabpro>
+        </models>
+    </global>
+</config>

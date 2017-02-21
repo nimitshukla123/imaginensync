@@ -1,0 +1,10 @@
+<div class="collapsible mobile-collapsible">
+<h4><span>Useful links</span><span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Shopping Policy" href="#">Shopping Policy</a></li>
+<li><a title="Returns" href="#">Returns</a></li>
+<li><a title="Estimate Delivery Date" href="#">Estimate Delivery Date</a></li>
+<li><a title="Polices" href="#">Polices</a></li>
+<li><a title="Polices" href="#">Support Centre</a></li>
+</ul>
+</div>

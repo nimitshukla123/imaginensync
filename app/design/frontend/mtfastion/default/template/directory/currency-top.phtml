@@ -1,0 +1,22 @@
+<?php if($this->getCurrencyCount()>1): ?>
+<?php  
+    $currency_code = Mage::app()->getStore()->getCurrentCurrencyCode();
+    $currency_symbol = Mage::app()->getLocale()->currency( $currency_code )->getSymbol(); 
+    $currency_name = Mage::app()->getLocale()->currency( $currency_code )->getName();
+?>
+
+<div class="currency-topbar">
+    <div class="currency-sym">
+        <span class="sym"><?php echo $currency_symbol ?></span>
+        <span class="title hidden-xs"><?php echo $currency_code ?></span>
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="currency-list">
+        <ul>
+        <?php foreach ($this->getCurrencies() as $_code => $_name): ?>
+            <li><a href="<?php echo $this->getSwitchCurrencyUrl($_code) ?>"><span class="sym"><?php echo Mage::app()->getLocale()->currency($_code)->getSymbol() ?></span><span class="title"><?php echo $_code ?></span></a></li>
+        <?php endforeach; ?>
+        </ul>
+    </div>
+</div>
+<?php endif; ?>

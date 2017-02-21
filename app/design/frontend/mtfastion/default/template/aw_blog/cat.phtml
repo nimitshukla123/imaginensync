@@ -1,0 +1,51 @@
+<?php $posts = $this->getPosts();$date = Mage::getModel('core/date'); ?>
+<div id="messages_product_view">
+    <?php Mage::app()->getLayout()->getMessagesBlock()->setMessages(Mage::getSingleton('customer/session')->getMessages(true)); ?>
+    <?php echo Mage::app()->getLayout()->getMessagesBlock()->getGroupedHtml(); ?>
+</div>
+
+
+<?php foreach ($posts as $post):  ?>
+    <div class="postWrapper">
+        <div class="cats-post">
+            <?php $categories = '';foreach ($post['cats'] as $key => $cat) { 
+                $categories .= '<a href="'.$cat['url'].'" title="'.$cat['title'].'">'.$cat['title'].'</a>, ';
+            } 
+             $categories = trim($categories,', ');
+                echo $categories;
+            ?>
+        </div>
+        <div class="postTitle">
+            <h2><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></h2>
+        </div>
+       
+            <span class="date"><i class="fa fa-calendar"></i>  <?php echo $post->getCreatedTime(); ?></span>
+        <div class="img-post"><?php if($post->getData('thumbnail')){ ?><img alt="<?php echo $post->getTitle(); ?>" src="<?php echo Mage::getBaseUrl('media').$post->getData('thumbnail'); ?>" /><?php } ?></div>
+        
+       
+        
+
+          <div class="postContent"><?php echo $post->getData('short_content'); ?></div>
+      
+          <a href="<?php echo $post->getAddress(); ?>" class="postReadmore"><span>Continue reading...</span></a>
+          <div class="postDetails">
+            
+            <?php if ($this->getCommentsEnabled()): ?>
+                <span class="comment-post"><?php echo $post->getCommentCount() != 0 ? $post->getCommentCount() : '0'; ?> <a href="<?php echo $post->getAddress(); ?>#commentBox" > <?php echo Mage::helper('blog')->__('Comments'); ?></a> </span>
+            <?php endif; ?>
+            <div class="postBookmarks share-post">
+
+                    <a href="http://www.facebook.com/sharer.php?u=<?php echo $post->getAddress();?>" class="post_share_facebook" onclick="javascript:window.open(this.href,
+                                      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=220,width=600');return false;" title="Share to facebook"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://twitter.com/share?url=<?php echo $post->getAddress();?>" onclick="javascript:window.open(this.href,
+                                      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600');return false;" title="Share to twitter" class="product_share_twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://plus.google.com/share?url=<?php echo $post->getAddress();?>" onclick="javascript:window.open(this.href,
+                                      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share to google plus"><i class="fa fa-google-plus"></i></a>
+                    <a href="http://pinterest.com/pin/create/button/?url=<?php echo $post->getAddress();?>&amp;media=&amp;description=Gallery" title="Share to pinterest"><i class="fa fa-pinterest"></i></a>
+                    <a href="mailto:?subject=Gallery&amp;body=Hey lovelies, If you follow me on Instagram, then you’ll know that I’ve just returned from Paris where I spent a gorgeous weekend exploring this beautiful city. I thought I’d share my whereabouts with you as I took a lot of amazing pictures. We arrived at our hotel on Saturday and literally had a super... <?php echo $post->getAddress();?>" class="product_share_email" title="Sent to mail"><i class="fa fa-mail-forward"></i></a>
+             
+            </div>
+         </div>   
+    </div>
+<?php endforeach; ?>
+

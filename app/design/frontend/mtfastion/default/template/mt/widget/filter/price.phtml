@@ -1,0 +1,57 @@
+<?php
+/**
+ * @category    MT
+ * @package     MT_Filter
+ * @copyright   Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+ * @license     GNU General Public License version 2 or later
+ * @author ZooExtension.com
+ * @email       magento@cleversoft.co
+ */
+?>
+<?php
+    $bar = Mage::helper('mtfilter')->getConfig('mtfilter/general/bar');
+    $config = $this->getData('config') ? $this->getData('config') : $config;
+    $barColor = '#'.Mage::helper('mtfilter')->getConfig('mtfilter/general/bar_color');
+?>
+<div id="<?php echo $this->getHash()?>" class="price-slider" data-limit="<?php echo $this->getData('limit')?>" data-numloadmore="<?php echo $this->getData('num_loadmore')?>"  data-column="<?php echo $this->getData('column')?>"  data-config="<?php echo Mage::helper('core')->escapeHtml($config)?>">
+    <div id="widget-price-filter-min" class="price-slider-handle min"></div>
+    <div id="widget-price-filter-max" class="price-slider-handle max"></div>
+    <div id="widget-price-filter-span" class="price-slider-span"></div>
+</div>
+<div class="layer-price">
+    <?php echo $this->getCurrencySymbol()?><span id="layer-price-min-<?php echo $this->getHash()?>"></span>&nbsp;&nbsp;-&nbsp;&nbsp;<?php echo $this->getCurrencySymbol()?><span id="layer-price-max-<?php echo $this->getHash()?>"></span>
+</div>
+<style type="text/css">
+    .price-slider{
+        height: 8px;
+        width: 86%;
+        background: #ececec;
+        position: relative;
+        margin: 10px auto;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .price-slider .price-slider-handle{
+		height: 16px;
+		position: absolute;
+		top: -4px;
+		width: 16px;
+    }
+    .price-slider-handle.min{
+        background: #484848;
+    }
+    .price-slider-handle.max{
+        background: #d33f37;
+    }
+    .layer-price{
+        text-align: center;
+    }
+</style>
+<script type="text/javascript">
+    var config = <?php echo $this->getConfig()?>;
+    config.url = '<?php echo Mage::helper('mtwidget')->buildFilterUrl($this->getData('url'),'?')?>';
+</script>

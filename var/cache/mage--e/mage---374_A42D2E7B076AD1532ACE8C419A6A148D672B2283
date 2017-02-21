@@ -1,0 +1,284 @@
+<!-- navigation BOF -->
+<!--<div class="navbar visible-xs">
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-toggle" type="button" data-toggle="collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+    <div class="mt-navigation hidden-xs">
+                <div class="logo-sticky" style="display: none;">
+            <a href="http://127.0.0.1/imaginensync/index.php/?___SID=U">
+                <img class="img-sticky img-responsive" src="http://127.0.0.1/imaginensync/skin/frontend/mtfastion/default/images/logo-sticky.png" alt="Magento Commerce"/>
+            </a>
+        </div>
+
+        <div class="mt-main-menu">
+            <ul id="mtnav" class="megamenu">
+                                    <li class="level0 home level-top  parent  active m-dropdown">
+                        <a href="http://127.0.0.1/imaginensync/index.php/"
+                           class="level-top"><span>Home</span></a>
+                        <div class="dropdown sub-wrapper shown-sub" style="height: auto; display: none; overflow: inherit;">
+<ul id="select-store" class="store-switcher" title="Select Store">
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=english">Home 01</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=german">Home 02</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=spainish">Home 03</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=brazil">Home 04</a></li>
+<li class="level1 item "><a href="http://127.0.0.1/imaginensync/?___store=arabic">Home RTL</a></li>
+</ul>
+<!----></div>                    </li>
+                                <li class="level0 nav-1 level-top first mega_align_left parent">
+<a href="http://127.0.0.1/imaginensync/index.php/men.html?___SID=U" class="level-top">
+
+<span>Men</span>
+</a>
+<div class="level0 sub-wrapper shown-sub" data-width="100%" style="display:none; width: 100%px; height:auto;">
+<div class="mtmenu-block mtmenu-block-center menu-items grid12-9 itemgrid itemgrid-4col">
+<ul class="level0">
+<li class="level1 groups item nav-1-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top.html?___SID=U">
+
+<span class="title_group">Top</span>
+</a>
+<div class="groups-wrapper">
+<ul class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/shirt.html?___SID=U">
+
+<span>Shirt</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/florals.html?___SID=U">
+
+<span>Florals</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/crochet.html?___SID=U">
+
+<span>Crochet</span>
+</a>
+</li><li class="level2 nav-1-1-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/top/stripes.html?___SID=U">
+
+<span>Stripes</span>
+</a>
+</li>
+</ul>
+</div>
+</li><li class="level1 groups item nav-1-2">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom.html?___SID=U">
+
+<span class="title_group">Bottom</span>
+</a>
+<div class="groups-wrapper">
+<ul class="level1">
+<li class="level2 nav-1-2-5 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/short.html?___SID=U">
+
+<span>Short</span>
+</a>
+</li><li class="level2 nav-1-2-6">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level2 nav-1-2-7">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/indoor.html?___SID=U">
+
+<span>Indoor</span>
+</a>
+</li><li class="level2 nav-1-2-8 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/bottom/sport.html?___SID=U">
+
+<span>Sport</span>
+</a>
+</li>
+</ul>
+</div>
+</li><li class="level1 groups item nav-1-3">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes.html?___SID=U">
+
+<span class="title_group">Shoes</span>
+</a>
+<div class="groups-wrapper">
+<ul class="level1">
+<li class="level2 nav-1-3-9 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/sport.html?___SID=U">
+
+<span>Sport</span>
+</a>
+</li><li class="level2 nav-1-3-10">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level2 nav-1-3-11">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/leather.html?___SID=U">
+
+<span>Leather</span>
+</a>
+</li><li class="level2 nav-1-3-12 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/shoes/canvas.html?___SID=U">
+
+<span>Canvas</span>
+</a>
+</li>
+</ul>
+</div>
+</li><li class="level1 groups item nav-1-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories.html?___SID=U">
+
+<span class="title_group">Accessories</span>
+</a>
+<div class="groups-wrapper">
+<ul class="level1">
+<li class="level2 nav-1-4-13 first">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/belt.html?___SID=U">
+
+<span>Belt</span>
+</a>
+</li><li class="level2 nav-1-4-14">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/scarves.html?___SID=U">
+
+<span>Scarves</span>
+</a>
+</li><li class="level2 nav-1-4-15">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/sunglasses.html?___SID=U">
+
+<span>Sunglasses</span>
+</a>
+</li><li class="level2 nav-1-4-16 last">
+<a href="http://127.0.0.1/imaginensync/index.php/men/accessories/jewelry.html?___SID=U">
+
+<span>Jewelry</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="menu-static-blocks mtmenu-block mtmenu-block-right grid12-3">
+<img  class="img-responsive" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/static/mega_images_1.jpg" alt="" />
+</div>
+</div>
+</li><li class="level0 nav-2 level-top m-dropdown mega_align_left parent">
+<a href="http://127.0.0.1/imaginensync/index.php/women.html?___SID=U" class="level-top">
+
+<span>Women</span>
+</a>
+<div class="dropdown sub-wrapper shown-sub"  data-width=""  style="display:none; width: px; height:auto;">
+<div class="mtmenu-block mtmenu-block-center menu-items grid12-12 itemgrid itemgrid-4col">
+<ul class="level0">
+<li class="level1 item nav-2-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/women/sleepwear.html?___SID=U">
+
+<span>Sleepwear</span>
+</a>
+</li><li class="level1 item nav-2-2">
+<a href="http://127.0.0.1/imaginensync/index.php/women/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level1 item nav-2-3">
+<a href="http://127.0.0.1/imaginensync/index.php/women/indoor.html?___SID=U">
+
+<span>Indoor</span>
+</a>
+</li><li class="level1 item nav-2-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/women/outdoor.html?___SID=U">
+
+<span>Outdoor</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li><li class="level0 nav-3 level-top m-dropdown last mega_align_left parent">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories.html?___SID=U" class="level-top">
+
+<span>Accessories</span>
+</a>
+<div class="dropdown sub-wrapper shown-sub"  data-width=""  style="display:none; width: px; height:auto;">
+<div class="mtmenu-block mtmenu-block-center menu-items grid12-12 itemgrid itemgrid-4col">
+<ul class="level0">
+<li class="level1 item nav-3-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/hat.html?___SID=U">
+
+<span>Hat</span>
+</a>
+</li><li class="level1 item nav-3-2">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes.html?___SID=U">
+
+<span>Shoes</span>
+</a>
+<div class="sub-wrapper shown-sub"  data-width=""  style="display:none; width: px; height:auto;">
+<ul class="level1">
+<li class="level2 nav-3-2-1 first">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/sport.html?___SID=U">
+
+<span>Sport</span>
+</a>
+</li><li class="level2 nav-3-2-2">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/casual.html?___SID=U">
+
+<span>Casual</span>
+</a>
+</li><li class="level2 nav-3-2-3">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/sneaker.html?___SID=U">
+
+<span>Sneaker</span>
+</a>
+</li><li class="level2 nav-3-2-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/shoes/boot.html?___SID=U">
+
+<span>Boot</span>
+</a>
+</li>
+</ul>
+</div>
+</li><li class="level1 item nav-3-3">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/glasses.html?___SID=U">
+
+<span>Glasses</span>
+</a>
+</li><li class="level1 item nav-3-4 last">
+<a href="http://127.0.0.1/imaginensync/index.php/accessories/footerwear.html?___SID=U">
+
+<span>Footerwear</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>                            <li class="level0 level-top custom-block  menu-item-left">
+                                <a href="http://127.0.0.1/imaginensync/index.php/contact?___SID=U"
+                                   class="level-top">
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                                                        <li class="level0 level-top custom-block  menu-item-left">
+                                <a href="http://127.0.0.1/imaginensync/index.php/about-magento-demo-store?___SID=U"
+                                   class="level-top">
+                                    <span>About Us</span>
+                                </a>
+                            </li>
+                                        </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $mt(function () {
+            $mt(".megamenu").megamenu({
+                'animation': 'slide',
+                'mm_timeout': 150
+            });
+        });
+    </script>
+<!-- navigation EOF -->

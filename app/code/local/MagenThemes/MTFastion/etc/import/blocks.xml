@@ -1,0 +1,445 @@
+<root><blocks><cms_block><title>Footer Links</title><identifier>footer_links</identifier><content><![CDATA[
+<ul>
+    <li><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>
+    <li><a href="{{store direct_url="customer-service"}}">Customer Service</a></li>
+<li class="last privacy"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+</ul>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Links Company</title><identifier>footer_links_company</identifier><content><![CDATA[
+<div class="links">
+    <div class="block-title">
+        <strong><span>Company</span></strong>
+    </div>
+    <ul>
+        <li><a href="{{store url=""}}about-magento-demo-store/">About Us</a></li>
+        <li><a href="{{store url=""}}contacts/">Contact Us</a></li>
+        <li><a href="{{store url=""}}customer-service/">Customer Service</a></li>
+        <li><a href="{{store url=""}}privacy-policy-cookie-restriction-mode/">Privacy Policy</a></li>
+    </ul>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Cookie restriction notice</title><identifier>cookie_restriction_notice_block</identifier><content><![CDATA[<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Parallax Content 01</title><identifier>parallax-content-01</identifier><content><![CDATA[
+<div class="inner-parallax-content">
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+<div class="block-1 block-item">
+<div class="content">
+<h2>Peace + Love</h2>
+<p>Capturing the drama and high-octane lifestyle of the lavish <br />and famous, Peace + Love is for the fierce. The untouchable<br /> and the powerful.</p>
+<div class="button"><a class="btn2" href="#">SHOP THE COLLECTION </a></div>
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+<div class="block-2 block-item">
+<div class="content">
+<h2>Coats &amp; Jackets</h2>
+<p>From the love-forever faux leather biker jacket and the never<br /> fail trench coats to faux fur gilets and the ever so coveted<br /> cocoon coat shape, we have something for any style right<br /> here.</p>
+<div class="button"><a class="btn2" href="#">SHOP COATS</a></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+<div class="block-3 block-item">
+<div class="content">
+<h2>Boot-iful</h2>
+<p>Boots look good at any time of the year but we&rsquo;re especially<br /> lovin&rsquo; &lsquo;em right now. Spot a hot trend and submit it for votes.<br /> You will get it FREE if it got produced!</p>
+<div class="button"><a class="btn2" href="#">SHOP BOOTS</a></div>
+</div>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Banner Block 01</title><identifier>banner_block_01</identifier><content><![CDATA[<div class="bann-block01">
+<div class="inner-block">
+<div class="col-lg-6 col-xs-12 block-section">
+<div class="inner-block">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/block_slide1.jpg"}}" /></div>
+<div class="content">
+<h2>shoes</h2>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-xs-12">
+<div class="inner-block block-section">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/block_slide2.jpg"}}" /></div>
+<div class="content">
+<h2>bags</h2>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Header Text Content</title><identifier>header-text-content</identifier><content><![CDATA[<div class="content-left">
+<div class="icon"><i class="fa fa-paper-plane"></i></div>
+<div class="content-text">
+<h4>Free shipping worldwide</h4>
+<p>Over $50 now fully tracked</p>
+</div>
+ </div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Slider 01</title><identifier>slider-01</identifier><content><![CDATA[<div class="slider-content center-block">
+<div class="container slider-left">
+<h3 class="title">HOODIES &amp; SWEET SHIRTS</h3>
+<p>Shop all chirstmas jumpers</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/slider01.jpg"}}" /></p>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Slider 02</title><identifier>slider-02</identifier><content><![CDATA[<div class="slider-content center-block">
+<div class="container slider-right">
+<h3 class="title">NEW TREND GOLDEN MUSE</h3>
+<p>Statment pieces for the party season</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/slider02.jpg"}}" /></p>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Slider 03</title><identifier>slider-03</identifier><content><![CDATA[<div class="slider-content center-block">
+<div class="container  slider-left">
+<h3 class="title">STEP IN TO WINTER</h3>
+<p>Shop our range of winter jacket</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/slider03.jpg"}}" /></p>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Block 01</title><identifier>footer-block-01</identifier><content><![CDATA[<p><a class="logo-footer-top" href="{{config path="web/unsecure/base_url"}}"><img src="{{media url="wysiwyg/magenthemes/mtfastion/logo/w-logo.png"}}" alt="" /></a></p>
+<p class="text-wrap-logo">We bring you the perfect shopping experience with hundreds of fashion-forward jewelry, watches, bags, accessories and beauty products.</p>
+<div class="social-footer ">
+<ul>
+<li><a title="Facebook" href="#"><span class="fa fa-facebook">&nbsp;</span></a></li>
+<li><a title="Twitter" href="#"><span class="fa fa-twitter">&nbsp;</span></a></li>
+<li><a title="instagram" href="#"><span class="fa fa-instagram">&nbsp;</span></a></li>
+<li><a title="youtube" href="#"><span class="fa fa-youtube">&nbsp;</span></a></li>
+<li><a title="pinterest" href="#"><span class="fa fa-pinterest">&nbsp;</span></a></li>
+<li><a title="G+" href="#"><span class="fa fa-google-plus">&nbsp;</span></a></li>
+</ul>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Block 02</title><identifier>footer-block-02</identifier><content><![CDATA[<div class="collapsible mobile-collapsible">
+<h4><span>Shop</span> <span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Computer" href="#">Computers</a></li>
+<li><a title="Laptops" href="#">Laptops</a></li>
+<li><a title="Tables" href="#">Tables</a></li>
+<li><a title="Mobiles" href="#">Mobiles</a></li>
+<li><a title="Mobiles" href="#">Accessories</a></li>
+</ul>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Block 03</title><identifier>footer-block-03</identifier><content><![CDATA[<div class="collapsible mobile-collapsible">
+<h4><span>Useful links</span><span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Shopping Policy" href="#">Shopping Policy</a></li>
+<li><a title="Returns" href="#">Returns</a></li>
+<li><a title="Estimate Delivery Date" href="#">Estimate Delivery Date</a></li>
+<li><a title="Polices" href="#">Polices</a></li>
+<li><a title="Polices" href="#">Support Centre</a></li>
+</ul>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Block 04</title><identifier>footer-block-04</identifier><content><![CDATA[<div class="collapsible mobile-collapsible">
+<h4><span>Customer Care</span><span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul>
+<li><a title="Products" href="#">Delivery</a></li>
+<li><a title="Community" href="#">Track your order</a></li>
+<li><a title="Products" href="#">Discount</a></li>
+<li><a title="Community" href="#">Returns</a></li>
+<li><a title="Support" href="#">Buy gift cards</a></li>
+</ul>
+<!--{{block type="page/switch" name="store_switcher" template="page/switch/stores.phtml"}}--></div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Payment</title><identifier>footer-payment</identifier><content><![CDATA[<img src="{{media url="wysiwyg/magenthemes/mtfastion/images/pay.jpg"}}" alt="" />]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Link Copyright</title><identifier>footer_links_coyright</identifier><content><![CDATA[<ul>
+<li><a title="ABOUT" href="#">About</a></li>
+<li><a title="BLOG" href="#">Blog</a></li>
+<li><a title="CONTACT US" href="#">Contact Us</a></li>
+<li><a title="FAQ" href="#">Faq</a></li>
+<li><a title="Privacy Policy" href="#">Privacy Policy</a></li>
+<li><a title="Careers" href="#">Careers</a></li>
+<li><a title="Terms &amp; Conditions" href="#">Terms &amp; Conditions</a></li>
+</ul>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Newletter Block</title><identifier>newletter_block</identifier><content><![CDATA[{{block type="newsletter/subscribe" template="newsletter/subscribe.phtml"}}]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>MT Pallarax 01</title><identifier>mt-pallarax01</identifier><content><![CDATA[<div id="parallax-1" class="section01 parallax-wrap" style="background: url({{media url='wysiwyg/magenthemes/mtfastion/images/layout3/block_paralax_1.jpg'}});">
+<div class="parallax-content center-block">
+<h3 class="title-parallax">WINTER CHECKLIST</h3>
+<p>Explore Lined&rsquo;s Collection with quality design. You certainly so love it !</p>
+<a class="rit-button rit-button-black" href="#">SHOP WINTER NOW</a></div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>MT Pallarax 02</title><identifier>mt-pallarax02</identifier><content><![CDATA[<div id="parallax-2" class="section02 parallax-wrap" style="background: url({{media url='wysiwyg/magenthemes/mtfastion/images/layout3/block_paralax_2.jpg'}});">
+<div class="parallax-content center-block">
+<h3 class="title-parallax">Couple&rsquo;s Collection 2016</h3>
+<p>Save moments romatic of you with couple&rsquo;s collection from ghoster !</p>
+<a class="rit-button rit-button-white" href="#">view lookbook</a></div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>MT Pallarax 03</title><identifier>mt-pallarax03</identifier><content><![CDATA[<div id="parallax-3" class="section03 parallax-wrap" style="background: url({{media url='wysiwyg/magenthemes/mtfastion/images/layout3/block_paralax_3.jpg'}});">
+<div class="parallax-content center-block">
+<h3 class="title-parallax">WINTER CHECKLIST</h3>
+<p>Explore Lined&rsquo;s Collection with quality design. You certainly so love it !</p>
+<a class="rit-button rit-button-black" href="#">SHOP WINTER NOW</a></div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>MT Pallarax 04</title><identifier>mt-pallarax04</identifier><content><![CDATA[<div id="parallax-4" class="section04 parallax-wrap" style="background: url({{media url='wysiwyg/magenthemes/mtfastion/images/layout3/block_paralax_4.jpg'}});">
+<div class="parallax-content center-block">
+<h3 class="title-parallax">super sale accessories</h3>
+<p>Free ground shipping for order over $250 on the world !</p>
+<a class="rit-button rit-button-light-white" href="#">checkout now</a></div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Slider 04</title><identifier>slider-04</identifier><content><![CDATA[<div class="slider-content dark-theme center-block ">
+<div class="slider-center">
+<h3 class="title">STEP IN TO WINTER</h3>
+<p>Shop our range of winter jacket</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout2/slider04.jpg"}}" /></p>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Slider 05</title><identifier>slider-05</identifier><content><![CDATA[<div class="center-block slider-content dark-theme">
+<div class=" slider-center">
+<h3 class="title">HOODIES &amp; SWEET SHIRTS</h3>
+<p>Shop all chirstmas jumpers</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout2/slider05.jpg"}}" /></p>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Slider 06</title><identifier>slider-06</identifier><content><![CDATA[<div class=" center-block slider-content dark-theme">
+<div class="slider-center">
+<h3 class="title">NEW TREND GOLDEN MUSE</h3>
+<p>Statment pieces for the party season</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout2/slider06.jpg"}}" /></p>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Banner Block 02</title><identifier>banner_block_02</identifier><content><![CDATA[<div class="bann-block">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout2/banner-left.jpg"}}" /></div>
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">minimal coat</h2>
+<p>Women&rsquo;s Coat</p>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Banner Block 03</title><identifier>banner_block_03</identifier><content><![CDATA[<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12">
+<div class="bann-block">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout2/banner-right01.jpg"}}" /></div>
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">swatchs</h2>
+<p>Accessories</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row block-3">
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="bann-block">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout2/banner-right02.jpg"}}" /></div>
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">lipstick</h2>
+<p>Cosmetic</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="bann-block">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout2/banner-right03.jpg"}}" /></div>
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">jewelry</h2>
+<p>Accessories</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Block 05</title><identifier>footer-block-05</identifier><content><![CDATA[<p><a class="logo-footer-top" href="{{config path="web/unsecure/base_url"}}"><img src="{{media url="wysiwyg/magenthemes/mtfastion/logo/w-logo.png"}}" alt="" /></a></p>
+<div class="content" >
+<div class="text-content"> FASTION is a fast growing global online fashion store which offers the very best in retro style and unique vintage fashion products as well as the latest style dresses, rings, watches, jewelry, outerwear and bags etc.</div>
+<div class="footer-item-body">
+<div class="ft-line"><i class="icon_house_alt">&nbsp;</i> <span class="ft-line-txt">169 Nguyen Ngoc Vu Str, Cau Giay, Hanoi, Vietnam</span></div>
+<div class="ft-line"><i class="icon_mobile">&nbsp;</i> <span class="ft-line-txt">(0044) 8647 1234 587</span></div>
+<div class="ft-line"><i class="icon_mail_alt">&nbsp;</i> <span class="ft-line-txt">hello@yourdomain.com</span></div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Block 06</title><identifier>footer-block-06</identifier><content><![CDATA[<div class="collapsible mobile-collapsible">
+<h4><span>Information</span> <span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul class="list-2cols">
+<li><a title="" href="#">Site Map</a></li>
+<li><a title="" href="#">Search Terms</a></li>
+<li><a title="" href="#">Advanced Search</a></li>
+<li><a title="" href="#">About Us</a></li>
+<li><a title="" href="#">Contact Us</a></li>
+<li><a title="" href="#">My Account</a></li>
+<li><a title="" href="#">Login</a></li>
+<li><a title="" href="#">My Cart</a></li>
+<li><a title="" href="#">WishLisht</a></li>
+<li><a title="" href="#">Checkout</a></li>
+</ul>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Footer Block 07</title><identifier>footer-block-07</identifier><content><![CDATA[<div class="collapsible mobile-collapsible">
+<h4><span>Information</span> <span class="accordion-footer visible-xs accordion-show">accordion footer</span></h4>
+<ul class="list-social-icons small light">
+<li><a href="#" target="_blank"><span class="fa fa-twitter">&nbsp;</span> twitter </a></li>
+<li><a href="#" target="_blank"><span class="fa fa-facebook">&nbsp; </span>facebook</a></li>
+<li><a href="#" target="_blank"><span class="fa fa-google-plus"> &nbsp;</span>google-plus</a></li>
+<li><a href="#" target="_blank"><span class="fa  fa-instagram"> &nbsp;</span>instagram</a></li>
+<li><a href="#" target="_blank"><span class="fa fa-pinterest-p">&nbsp;</span> pinterest</a></li>
+</ul>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home Pager Parallax</title><identifier>pager-parallax</identifier><content><![CDATA[<div class="rit-one-page">
+<ul class="one-pager">
+<li><a href="#parallax-1"><span class="text">Checklist</span><span class="icon">&nbsp;</span></a></li>
+<li><a href="#parallax-2"><span class="text">Collection</span><span class="icon">&nbsp;</span></a></li>
+<li><a href="#parallax-3"><span class="text">Winter</span><span class="icon">&nbsp;</span></a></li>
+<li><a href="#parallax-4"><span class="text">Sale</span><span class="icon">&nbsp;</span></a></li>
+</ul>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Menu Home</title><identifier>menu-home-item</identifier><content><![CDATA[<div class="dropdown sub-wrapper shown-sub" style="height: auto; display: none; overflow: inherit;">
+<ul id="select-store" class="store-switcher" title="Select Store">
+<li class="level1 item "><a href="{{config path="web/unsecure/base_url"}}?___store=english">Home 01</a></li>
+<li class="level1 item "><a href="{{config path="web/unsecure/base_url"}}?___store=german">Home 02</a></li>
+<li class="level1 item "><a href="{{config path="web/unsecure/base_url"}}?___store=spainish">Home 03</a></li>
+<li class="level1 item "><a href="{{config path="web/unsecure/base_url"}}?___store=brazil">Home 04</a></li>
+<li class="level1 item "><a href="{{config path="web/unsecure/base_url"}}?___store=arabic">Home RTL</a></li>
+</ul>
+<!--{{block type="page/switch" name="store_switcher" template="page/switch/stores.phtml"}}--></div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 04 - Block Top 1</title><identifier>block-top-1</identifier><content><![CDATA[<div class="row block-top block-top3">
+<div class="col-md-4 col-sm-4 col-xs-12 block-item">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Soft Slippers</h2>
+<p>Soft slippers in velour with non-slip protection on soles.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top1a.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$200</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 block-item">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Derby Shoes</h2>
+<p>Derby shoes in imitation suede with open laces and rubber soles.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top1b.jpg"}}" /> </div>
+<div class="content-bottom">
+<div class="price">$200</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 block-item">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Running Hat</h2>
+<p>Lightweight, double-layer running hat in fast-drying, breathable functional fabric.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top1c.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$200</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 4 - Block Top 2</title><identifier>block-top-2</identifier><content><![CDATA[<div class="row block-top-2 block-top">
+<div class="col-md-6 col-sm-6 col-xs-12 block-1 block-item no-padding first-block" style="height: 1500px;">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Satchel Top Handle Bag</h2>
+<p>Start your day fuss free by carrying all your essentials</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top2a.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$200</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 block-2 block-item no-padding">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top2b.jpg"}}" /></div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 4 - Block Top 3</title><identifier>block-top-3</identifier><content><![CDATA[<div class="row block-top-2  block-top">
+<div class="col-md-6 col-sm-6 col-xs-12 block-2 block-item no-padding">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top3a.jpg"}}" /></div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 block-1 block-2b  block-item no-padding" style="height: 1500px;">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Hooded Sweater</h2>
+<p>Lined, drawstring hood, cable-knit front section, and long sleeves.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top3b.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$660.00</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 4 - Block Top 4</title><identifier>block-top-4</identifier><content><![CDATA[<div class="row block-top-2 block-top">
+<div class="col-md-6 col-sm-6 col-xs-12 block-1 block-item no-padding" style="height: 1500px;">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Pile-lined Parka</h2>
+<p>Lightly padded parka in washed cotton canvas with pile-lined drawstring hood.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top4a.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$200</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 block-2 block-item no-padding">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top4b.jpg"}}" /></div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 4 - Block Top 5</title><identifier>block-top-5</identifier><content><![CDATA[<div class="row block-top-2  block-top">
+<div class="col-md-6 col-sm-6 col-xs-12 block-2 block-item no-padding">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top5a.jpg"}}" /></div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 block-1 block-2b  block-item no-padding" style="height: 1500px;">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Flannel Shirt</h2>
+<p>Long-sleeved shirt in brushed cotton flannel with a button-down collar and chest pocket.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top5b.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$450.00</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 4 - Block Top 6</title><identifier>block-top-6</identifier><content><![CDATA[<div class="row block-top-2 block-top">
+<div class="col-md-6 col-sm-6 col-xs-12 block-1 block-item no-padding" style="height: 1500px;">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Love Sporty Back Bodycon Dress</h2>
+<p>Absurdly alluring with the sport-inspired design.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top6a.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$200</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 block-2 block-item no-padding">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top6b.jpg"}}" /></div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 4 - Block Top 7</title><identifier>block-top-7</identifier><content><![CDATA[<div class="row block-top-2  block-top ">
+<div class="col-md-6 col-sm-6 col-xs-12 block-2 block-item no-padding">
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top7a.jpg"}}" /></div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 block-1 block-2b  block-item no-padding last-block" style="height: 1500px;">
+<div class="block-top-inner">
+<div class="content-block">
+<div class="mt-banner-content">
+<h2 class="banner-title">Lattice Front Floral Bardot Top</h2>
+<p>Made to complement your daytime wear.</p>
+</div>
+</div>
+<div class="images"><img alt="" src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top7b.jpg"}}" /></div>
+<div class="content-bottom">
+<div class="price">$430.00</div>
+<div class="view-more"><a href="#">Shop Now </a></div>
+</div>
+</div>
+</div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block><cms_block><title>Home 4 - Block Top 8</title><identifier>block-top-8</identifier><content><![CDATA[<div class="row block-top block-top-1">
+    <div class="col-md-12 col-sm-12 col-xs-12 block-item">
+        <div class="block-top-inner">
+            <div class="content-block">
+                <div class="mt-banner-content">
+                    <h2 class="banner-title">Backpack</h2>
+                    <p>Backpack in woven fabric with imitation leather details.</p>
+                </div>
+            </div>
+            <div class="images">
+<img src="{{media url="wysiwyg/magenthemes/mtfastion/images/layout4/block_top8.jpg"}}" alt="" />
+            </div>
+            <div class="content-bottom">
+                <div class="price">$1,880.50</div>
+                <div class="view-more"><a href="#">shop now </a></div>
+            </div>
+        </div>
+    </div>
+</div>]]></content><is_active>1</is_active><stores><item>0</item></stores></cms_block></blocks></root>

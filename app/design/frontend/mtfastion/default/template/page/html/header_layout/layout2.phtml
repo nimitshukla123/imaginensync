@@ -1,0 +1,116 @@
+<div class="header">
+    <div class="header-top">
+        <div class="header-top-inner">
+            <div class="container-header">
+                <div class="logo-home ">
+                    <?php if ($this->getIsHomePage()): ?>
+                        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a
+                                href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
+                                <img class="img-responsive"
+                                     src="<?php echo $mediaUrl . 'wysiwyg/magenthemes/mtfastion/logo/' . $logo; ?>"
+                                     alt="<?php echo $this->getLogoAlt() ?>"/></a>
+                        </h1>
+                    <?php else: ?>
+                        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+                           class="logo"><strong><?php echo $this->getLogoAlt() ?></strong>
+                            <img class="img-responsive"
+                                 src="<?php echo $mediaUrl . 'wysiwyg/magenthemes/mtfastion/logo/' . $logo; ?>"
+                                 alt="<?php echo $this->getLogoAlt() ?>"/>
+                        </a>
+                    <?php endif ?>
+
+                </div>
+                <div class="header-top-right   v-grid">
+                    <div class="menu-full" id="mt-sticky-header">
+                        <div class="container-sticky ">
+                            <div class="nav-top v-grid ">
+                                <div class="box-menu">
+                                    <div class="nav-top-inner  clearfix">
+                                        <?php echo $this->getChildHtml('topMenu') ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-control">
+                            <div class="wrap-show-search">
+                                <div class="mmb-container">
+                                    <div
+                                        class="mobile-menu-button menu-button-offcanvas mobile-menu-button-dark lines-button x2 overlay-close close no-toggle"
+                                        data-area="search" data-container="box-container">
+                                        <span class="lines"></span>
+                                    </div>
+                                </div>
+                                <div class="top-seach first-search">
+                                    <div class="quick-access">
+                                        <?php echo $this->getChildHtml('topSearch') ?>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header-top-links">
+                                <span class="icon-config"><i class="icon_cog"></i></span>
+
+                                <div class="wrap-toplinks">
+                                    <div><?php echo $this->getLayout()->createBlock('directory/currency')->setTemplate('directory/currency-top.phtml')->toHtml(); ?>
+                                        <?php echo $this->getChildHtml('store_language') ?>
+                                    </div>
+                                    <ul class="top-links">
+
+                                        <li>
+                                            <?php if ($sessionCustomer->isLoggedIn()) : ?>
+                                                <a href="<?php echo $this->getUrl('customer/account/logout') ?>"><i
+                                                        aria-hidden="true"
+                                                        class="icon_lock"></i><span><?php echo $this->__('Logout') ?></span></a>
+                                            <?php else: ?>
+                                                <a href="<?php echo $this->getUrl('customer/account') ?>"><i
+                                                        aria-hidden="true"
+                                                        class="icon_profile"></i><span><?php echo $this->__('Register/Login') ?></span></a>
+                                            <?php endif; ?>
+
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo $this->getUrl('wishlist') ?>">
+                                                <i aria-hidden="true" class="icon_heart"></i>
+                                                <span><?php echo $this->__('My Wishlist') ?></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo $this->getUrl('checkout/cart') ?>">
+                                                <i aria-hidden="true" class="icon_bag"></i>
+                                                <span><?php echo $this->__('My Cart') ?></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo $this->getUrl('checkout') ?>">
+                                                <i aria-hidden="true" class="icon_check_alt"></i>
+                                                <span><?php echo $this->__('Checkout'); ?></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt_getcart">
+                                <div class="mt-top-cart <?php echo $class; ?>">
+                                    <div class="mt-maincart">
+                                        <?php echo $this->getChildHtml('ajaxcart'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toggle-bar visible-xs col-xs-2 pull-left slicknav_menu">
+        <a href="#" aria-haspopup="true" tabindex="0" class="mobile-bar slicknav_btn slicknav_collapsed"
+           style="outline: none;"><span class="slicknav_menutxt"></span><span
+                class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span
+                    class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+
+    </div>
+</div>
+
+
+

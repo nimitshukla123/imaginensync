@@ -1,0 +1,40 @@
+<?php
+/**
+ *
+ * ------------------------------------------------------------------------------
+ * @category Mato
+ * @package Mato Framework
+ * ------------------------------------------------------------------------------
+ * @copyright    Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+ * @license      GNU General Public License version 2 or later;
+ * @author       ZooExtension.com
+ * @email        magento@cleversoft.co
+ * ------------------------------------------------------------------------------
+ *
+ */
+?>
+<!-- navigation BOF -->
+<div class="block block-nav">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Categories'); ?></span></strong>
+    </div>
+    <div class="block-content">
+        <ul id="categories_nav" class="nav-accordion nav-categories">
+            <?php echo $this->renderCategoriesMenuHtml(TRUE, TRUE, 0, 'level-top'); ?>
+        </ul>
+        <script type="text/javascript">
+            $mt(document).ready(function() {
+                $mt("#categories_nav").mtAccordionMenu({
+                    accordion:true,
+                    speed: 400,
+                    closedSign: 'collapse fa fa-angle-right',
+                    openedSign: 'expand fa fa-angle-right',
+                    mouseType: 0,
+                    easing: 'easeInOutQuad'
+                });
+				$mt(".expand").empty();
+            });
+        </script>
+    </div>
+</div>
+<!-- navigation EOF -->

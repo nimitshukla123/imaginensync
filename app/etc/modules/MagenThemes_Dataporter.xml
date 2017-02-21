@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MagenThemes_Dataporter>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MagenThemes_Dataporter>
+    </modules>
+</config> 

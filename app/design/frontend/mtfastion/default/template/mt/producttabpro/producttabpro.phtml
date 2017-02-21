@@ -1,0 +1,220 @@
+<?php
+/**
+ * @category    MT
+ * @package     MT_Quartz
+ * Copyright (C) 2008-2015 ZooExtension.com. All Rights Reserved.
+ * @license     GNU General Public License version 2 or later
+ * @author ZooExtension.com
+ * @email       magento@cleversoft.co
+ */
+?>
+<?php
+/* @var $this MT_Widget_Block_Widget */
+$left_title             = $this->getConfig('left_title');
+$middle_title             = $this->getConfig('middle_title');
+$right_title             = $this->getConfig('right_title');
+$left_tab               = $this->getConfig('left_tab');
+$middle_tab               = $this->getConfig('middle_tab');
+$right_tab               = $this->getConfig('right_tab');
+$tabLeft                = $this->getTabs('left');
+$tabRight                = $this->getTabs('right');
+$tabMiddle               = $this->getTabs('middle');
+$t                  = microtime();
+?>
+<div class="product-tab-pro">
+    <div class="tabs-collection col-lg-4 col-md-4 col-sm-4 col-xs-12" id="mt-block-left">
+        <div class="" >
+            <div class="main-heading">
+                <?php if ($left_title): ?>
+                    <div class="protab-title">
+                        <h4><span><?php echo $left_title ?></span></h4>
+                    </div>
+                <?php endif ?>
+                <?php if($left_tab): ?>
+                <ul class="widget-tabs nav nav-tabs">
+                    <?php foreach ($tabLeft as $index => $tab): ?>
+                        <li class="<?php echo $index==0 ? 'active' : '' ?>">
+                            <a href="#mt-block-left-<?php $tab['id'] ?>"
+                               data-value="<?php echo $tab['value'] ?>"
+                               data-type="<?php echo $tab['type'] ?>"
+                               data-limit="<?php echo $this->getLimit() ?>"
+                               data-column="<?php echo $this->getConfig('left_column') ?>"
+                               data-row="<?php echo $this->getConfig('left_row') ?>"
+                               data-cid="<?php echo $this->getData('left_category') ?>"
+                               data-template="<?php echo $template ?>"
+                               data-carousel="<?php echo $this->getConfig('scroll') ?>">
+                                <?php echo $tab['label'] ?>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+                <?php endif; ?>
+            </div>
+            <div class="widget-tab-content tab-content">
+                <?php if($left_tab): ?>
+                    <?php foreach ($tabLeft as $index => $tab): ?>
+                    <div id="mt-block-left-<?php echo $tab['id'] ?>" class="tab-pane<?php echo $index==0 ? ' active' : '' ?>">
+                        <?php if ($index > 0): ?>
+                    </div>
+                <?php continue ?>
+                <?php endif ?>
+                <?php echo $this->renderCollection('left') ?>
+                </div>
+                <?php endforeach ?>
+            <?php else: ?>
+                <?php echo $this->renderCollection('left') ?>
+            <?php endif; ?>
+            </div>
+
+        </div>
+    </div>
+    <div class="tabs-collection col-lg-4 col-md-4 col-sm-4 col-xs-12" id="mt-block-middle">
+        <div class="" >
+            <div class="main-heading">
+                <?php if ($middle_title): ?>
+                    <div class="protab-title">
+                        <h4><span><?php echo $middle_title ?></span></h4>
+                    </div>
+                <?php endif ?>
+                <?php if($middle_tab): ?>
+                <ul class="widget-tabs nav nav-tabs">
+                    <?php foreach ($tabMiddle as $index => $tab): ?>
+                        <li class="<?php echo $index==0 ? 'active' : '' ?>">
+                            <a href="#mt-block-middle-<?php echo  $tab['id'] ?>"
+                               data-value="<?php echo $tab['value'] ?>"
+                               data-type="<?php echo $tab['type'] ?>"
+                               data-limit="<?php echo $this->getLimit() ?>"
+                               data-column="<?php echo $this->getConfig('middle_column') ?>"
+                               data-row="<?php echo $this->getConfig('middle_row') ?>"
+                               data-cid="<?php echo $this->getData('middle_category') ?>"
+                               data-template="<?php echo $template ?>"
+                               data-carousel="<?php echo $this->getConfig('scroll') ?>">
+                                <?php echo $tab['label'] ?>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+                <?php endif; ?>
+            </div>
+            <div class="widget-tab-content tab-content">
+            <?php if($middle_tab): ?>
+                <?php foreach ($tabMiddle as $index => $tab): ?>
+                <div id="mt-block-middle-<?php echo $tab['id'] ?>" class="tab-pane<?php echo $index==0 ? ' active' : '' ?>">
+                    <?php if ($index > 0): ?>
+                </div>
+                <?php continue ?>
+                <?php endif ?>
+                    <?php echo $this->renderCollection('middle') ?>
+                </div>
+                <?php endforeach ?>
+            <?php else: ?>
+                <?php echo $this->renderCollection('middle') ?>
+            <?php endif; ?>
+            </div>
+
+        </div>
+    </div>
+    <div class="tabs-collection col-lg-4 col-md-4 col-sm-4 col-xs-12" id="mt-block-right">
+        <div class="" >
+            <div class="main-heading">
+                <?php if ($right_title): ?>
+                    <div class="protab-title">
+                        <h4><span><?php echo $right_title ?></span></h4>
+                    </div>
+                <?php endif ?>
+                <?php if($right_tab): ?>
+                <ul class="widget-tabs nav nav-tabs">
+                    <?php foreach ($tabRight as $index => $tab): ?>
+                        <li class="<?php echo $index==0 ? 'active' : '' ?>">
+                            <a href="#mt-block-right<?php echo $tab['id'] ?>"
+                               data-value="<?php echo $tab['value'] ?>"
+                               data-type="<?php echo $tab['type'] ?>"
+                               data-limit="<?php echo $this->getLimit() ?>"
+                               data-column="<?php echo $this->getConfig('right_column') ?>"
+                               data-row="<?php echo $this->getConfig('right_row') ?>"
+                               data-cid="<?php echo $this->getData('right_category') ?>"
+                               data-template="<?php echo $template ?>"
+                               data-carousel="<?php echo $this->getConfig('scroll') ?>">
+                                <?php echo $tab['label'] ?>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+                <?php endif; ?>
+            </div>
+            <div class="widget-tab-content tab-content">
+                <?php if($right_tab): ?>
+                    <?php foreach ($tabRight as $index => $tab): ?>
+                    <div id="mt-block-right-<?php echo $tab['id'] ?>" class="tab-pane<?php echo $index==0 ? ' active' : '' ?>">
+                        <?php if ($index > 0): ?>
+                    </div>
+                    <?php continue ?>
+                    <?php endif ?>
+                            <?php echo $this->renderCollection('right') ?>
+                    </div>
+                    <?php endforeach ?>
+                <?php else: ?>
+                    <?php echo $this->renderCollection('right') ?>
+                <?php endif; ?>
+            </div>
+
+        </div>
+    </div>
+<script type="text/javascript" src="<?php echo Mage::getBaseUrl('js') ?>mt/widget/frontend.js"></script>
+<script type="text/javascript">
+    new MT.Widget('mt-block-left', {
+        animation: <?php echo $this->getConfig('animation') ?>,
+        collectionUrl: '<?php echo $this->getUrl('producttabpro/collection/get') ?>',
+        parallax: <?php echo $this->getConfig('parallax') ?>,
+        carousel: <?php echo $this->getConfig('carousel', 'left') ?>,
+        carouselConfig: {
+            itemsDesktop: [1170, 1],
+            itemsDesktopSmall: [970, 1],
+            itemsTablet: [750, 1],
+            itemsMobile: [450, 1]
+        },
+        countdown: <?php echo $this->getConfig('countdown') ?>,
+        countdownConfig: null,
+        countdownTemplate: '<div class="day"><span class="no">%d</span><span class="text">days</span></div><div class="hours"><span class="no">%h</span><span class="text">hours</span></div><div class="min"><span class="no">%i</span><span class="text">min</span></div><div class="second"><span class="no">%s</span><span class="text">secs</span></div>',
+        kenburns: <?php echo $this->getConfig('kenburns') ?>
+    });
+
+    new MT.Widget('mt-block-middle', {
+        animation: <?php echo $this->getConfig('animation') ?>,
+        collectionUrl: '<?php echo $this->getUrl('producttabpro/collection/get') ?>',
+        collectionCallback: function () {
+        },
+        parallax: <?php echo $this->getConfig('parallax') ?>,
+        carousel: <?php echo $this->getConfig('carousel', 'middle') ?>,
+        carouselConfig: {
+            itemsDesktop: [1170, 1],
+            itemsDesktopSmall: [970, 1],
+            itemsTablet: [750, 1],
+            itemsMobile: [450, 1]
+        },
+        countdown: <?php echo $this->getConfig('countdown') ?>,
+        countdownConfig: null,
+        countdownTemplate: '<div class="day"><span class="no">%d</span><span class="text">days</span></div><div class="hours"><span class="no">%h</span><span class="text">hours</span></div><div class="min"><span class="no">%i</span><span class="text">min</span></div><div class="second"><span class="no">%s</span><span class="text">secs</span></div>',
+        kenburns: <?php echo $this->getConfig('kenburns') ?>
+    });
+
+    new MT.Widget('mt-block-right', {
+        animation: <?php echo $this->getConfig('animation') ?>,
+        collectionUrl: '<?php echo $this->getUrl('producttabpro/collection/get') ?>',
+        parallax: <?php echo $this->getConfig('parallax') ?>,
+        carousel: <?php echo $this->getConfig('carousel', 'right') ?>,
+        carouselConfig: {
+            itemsDesktop: [1170, 1],
+            itemsDesktopSmall: [970, 1],
+            itemsTablet: [750, 1],
+            itemsMobile: [450, 1]
+        },
+        countdown: <?php echo $this->getConfig('countdown') ?>,
+        countdownConfig: null,
+        countdownTemplate: '<div class="day"><span class="no">%d</span><span class="text">days</span></div><div class="hours"><span class="no">%h</span><span class="text">hours</span></div><div class="min"><span class="no">%i</span><span class="text">min</span></div><div class="second"><span class="no">%s</span><span class="text">secs</span></div>',
+        kenburns: <?php echo $this->getConfig('kenburns') ?>
+    });
+</script>
+</div>
+
+

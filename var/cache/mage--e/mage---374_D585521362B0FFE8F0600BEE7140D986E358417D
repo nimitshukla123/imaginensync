@@ -1,0 +1,43 @@
+<div class="" id="widget-f2186da9102e5311b76395f210b7e57c">
+		<div class="block block-sample row clearfix">
+		    			 <div class="owl-carousel ">
+									<div class="block-content">
+						<div class="slider-content center-block">
+<div class="container slider-left">
+<h3 class="title">HOODIES &amp; SWEET SHIRTS</h3>
+<p>Shop all chirstmas jumpers</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/mtfastion/images/slider01.jpg" /></p>					</div>
+									<div class="block-content">
+						<div class="slider-content center-block">
+<div class="container slider-right">
+<h3 class="title">NEW TREND GOLDEN MUSE</h3>
+<p>Statment pieces for the party season</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/mtfastion/images/slider02.jpg" /></p>					</div>
+									<div class="block-content">
+						<div class="slider-content center-block">
+<div class="container  slider-left">
+<h3 class="title">STEP IN TO WINTER</h3>
+<p>Shop our range of winter jacket</p>
+<a class="rit-button" href="#">view collection</a></div>
+</div>
+<p><img alt="" src="http://127.0.0.1/imaginensync/media/wysiwyg/magenthemes/mtfastion/images/slider03.jpg" /></p>					</div>
+							</div>
+		</div>
+	<script type="text/javascript" src="http://127.0.0.1/imaginensync/js/mt/widget/frontend.js"></script>
+    <script type="text/javascript">
+        new MT.Widget('widget-f2186da9102e5311b76395f210b7e57c', {
+            animation: {"enable":false,"animationName":null,"animationDelay":300,"itemSelector":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/wow\/wow.js"},
+            parallax: {"enable":false,"type":null,"overlay":null,"video":{"src":null,"volume":false,"layout":null,"width":null,"height":null},"image":{"src":null,"fit":null,"repeat":null},"file":{"poster":null,"mp4":null,"webm":null,"volume":false}},
+            carousel: {"enable":true,"pagination":true,"autoPlay":false,"items":1,"singleItem":true,"autoHeight":true,"loop":true,"lazyLoad":true,"lazyEffect":false,"addClassActive":true,"navigation":true,"navigationText":["<i class=\"fa fa-angle-left\"><\/i>","<i class=\"fa fa-angle-right\"><\/i>"]},
+            carouselConfig: null,
+            kenburns: {"enable":false,"images":[],"overlay":null,"engineSrc":"http:\/\/127.0.0.1\/imaginensync\/js\/mt\/extensions\/jquery\/plugins\/kenburns.js"},
+            onRefresh: true,
+            onLazyload: false,
+            autoHeight: false
+        });
+    </script>
+</div>
