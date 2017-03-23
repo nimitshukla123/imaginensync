@@ -49,11 +49,22 @@ $routeName = Mage::app()->getRequest()->getRouteName();
         </style>
         <div id="mt_newsletter" class="block block-subscribe">
             <div class="block-title">
+                <h4><span><?php echo $this->__('Lorem ipsum dolor sit') ?></span></h4>
+            </div>
+            <div class="center-block width-100">
+                <a class="button btn-popup pink" herf="#">
+                    <i class="fa fa-shopping-bag"></i> Go Shopping
+                </a>
+                <a class="button btn-popup" herf="#">
+                    <i class="fa fa-paint-brush"></i> Start Customizing 
+                </a>
+            </div>
+           <!-- <div class="block-title">
                 <h4><span><?php echo $this->__('NEWSLETTER SIGN UP') ?></span></h4>
             </div>
             <div class="row-none">
                 <div class="popup_message">
-                    <div class="intro">
+                    <div class="intro">this is test
                         <?php echo $desc;?>
                     </div>
                     <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="mt-newsletter-validate-detail">
@@ -73,7 +84,7 @@ $routeName = Mage::app()->getRequest()->getRouteName();
                     <input type="checkbox">
                     <?php echo $this->__('Don’t show this popup again');?>
                 </label>
-            </div>
+            </div>-->
             <script type="text/javascript">
                 //<![CDATA[
                 var mtNewsletterSubscriberFormDetail = new VarienForm('mt-newsletter-validate-detail');
